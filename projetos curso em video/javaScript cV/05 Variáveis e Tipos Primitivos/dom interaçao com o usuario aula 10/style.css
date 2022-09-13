@@ -1,0 +1,12 @@
+/* falta ligar no html */
+
+body {
+    font: normal 30px Arial;
+}
+input {
+    font: normal 30px Arial;
+    width: 100px; /*largura*/
+}
+div#res {
+    margin-top: 20px;
+}

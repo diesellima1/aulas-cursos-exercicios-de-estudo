@@ -1,0 +1,44 @@
+
+    <table>
+        <tr>
+            <th>Nº</th>
+            <th>Nome</th>
+            <th>Idade</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Aluno</td>
+            <td>20</td>
+        </tr>
+    </table>
+
+
+
+
+    tr
+
+O elemento Table Row(Linha da Tabela), ou tr, é responsável por representar as linhas de nossa tabela, seu valor semântico só tem expressão dentro da tag table. 
+
+
+th 
+
+th é tipo nav Menu de cima 
+ 
+O elemento Table Header(Cabeçalho da Tabela), ou th, é responsável por representar os elemento de cabeçalho, os elementos que são envolvidos por esta tag, tem seu estilo modificado, ficando em negrito, a fim de representar maior importância, dando significado para os elementos da coluna.
+Exemplo: 
+
+<tr>
+    <th> Valor </th>
+</tr>   
+
+
+
+Tabela com alguns elementos opcionais de tabela. Elemento 	Utilidade
+Caption 	Funciona como uma legenda para sua tabela
+Thead 	Uma tag com sentido semântico de definir aonde se localiza o cabeçalho de sua tabela
+Tbody 	Uma tag com sentido semântico. Como no html, o body, representa o corpo, aqui o Tbody representa o corpo da tabela
+Tfoot 	Uma tag com sentido semântico, de definir o rodapé de sua tabela Tfoot
+Está tabela possui todos estes elementos
+
+
+No exemplo acima usamos o atributo Colspan, semelhante ao colspan existe também o Rowspan . Rowspan e colspan servem para expandir as células fazendo com que uma única célula ocupe mais de uma linha ou mais de uma coluna. 

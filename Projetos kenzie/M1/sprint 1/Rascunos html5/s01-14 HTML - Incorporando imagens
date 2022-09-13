@@ -1,0 +1,43 @@
+
+
+ src
+
+Este atributo representa o caminho da imagem que você está inserindo no seu documento. Este atributo é obrigatório para o elemento <img>
+alt
+
+Este atributo define alternativa da imagem.
+
+Os usuários veem este texto se a URL da imagem estiver incorreta, se a imagem não estiver em um dos formatos suportados, ou se a imagem ainda não tiver sido baixada.
+
+Este atributo apesar de não ser obrigatório, é essêncial para tornar sua imagem acessível.
+
+Quando usamos este atributo damos a opção de um leitor de tela por exemplo interpretar a imagem inserida em forma de texto.
+
+#height
+
+Este atributo define a Altura do elemento. Quando usado dentro da tag <img> adotamos por padrão valor em pixels.
+
+#width
+
+Este atributo define a largura do elemento. Quando usado dentro da tag <img> adotamos por padrão valor em pixels.
+
+#Href
+
+O href é utilizado em alguns casos para fazer com que a imagem se torne um elemento clicavel e com capacidade de redirecionar 
+o usuário para outra página ou seção do seu documento. Essa combinação é feita da seguinte maneira: 
+
+//Imagem usada como um link
+<a href="https://developer.mozilla.org/pt-BR/" target="_blank">
+  <img src="https://mdn.mozillademos.org/files/6851/mdn_logo.png"/>
+</a>
+
+
+imagem clicavel 
+https://kenzie.com.br/
+
+
+//Imagem usada como um link quase certa falta arrumar o tamanho
+<a href="https://kenzie.com.br/" target="_blank">
+  <img src="https://media-exp1.licdn.com/dms/image/C4D0BAQGvHIKEgctzsA/company-logo_200_200/0/1635528369344?e=1666828800&v=beta&t=BBZ1bGRzByKCi2Jq_fqDfW5tJ5EP6cmurtDpPy1SLl4">
+</a>
+

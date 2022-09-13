@@ -1,0 +1,12 @@
+/* resset css  */
+
+div#area {
+    font: normal 20px Arial;
+    background: rgba(85, 255, 85, 0.692);
+    color: white;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+
+}

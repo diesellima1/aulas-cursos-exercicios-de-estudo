@@ -1,0 +1,36 @@
+As metatags irão nos fornecer a possibilidade de criar compatibilidade com navegadores
+ercebe que quando criamos nossa estrutura do html utilizando o emmet, com o comando html:5 
+é gerado uma estrutura com algumas tags dentro da nossa tag head? 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">                                             A partir da linha 4 estamos falando de metatags charset,name,content,property,http-equiv
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+</body>
+</html>
+
+<meta name=""  content="" />  O atributo name se refere a qual o tipo de meta estamos querendo inserir
+
+Já o atributo content se refere ao conteúdo daquele metatag 
+
+<meta charset="utf-8"/>   charset para indicar um formato aceito de caracteres será capaz de interpretar qualquer tipo de idioma  
+
+
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">   finalidade desta metatag será renderizada em todas as versões de navegadores Internet Explorer 
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> estabelecer uma compatibilidade em todos os dispositivos móveis 
+
+
+
+
+<title></title>    finalidade desta tag é determinar o título da página

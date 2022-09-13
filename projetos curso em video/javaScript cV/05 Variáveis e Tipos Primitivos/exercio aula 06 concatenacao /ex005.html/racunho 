@@ -1,0 +1,40 @@
+// let nome = prompt("Qual o seu nome bunitão")
+// if (nome.length > 5) {
+//     alert("que nome gostoso")
+// } else {
+//     alert("já vai me zuar Diesel")
+// }
+
+// let nomes = prompt("Qual o seu nome de verdade bunitão")
+// if (nomes.length > 5) {
+//     alert("que nome gostoso")
+// } else {
+//     alert("e eu sou a alexa ")
+// }
+
+// let nome2 = prompt("Qual o seu sobrenome?")
+// if (nome2.length > 5) {
+//     alert("para de gracinha")
+// } else {
+//     alert("parece nome de pepino em pó")
+// }
+
+// let nome2s = prompt("seu sobrenome querido!")
+// if (nome2s.length > 5) {
+//     alert("muito criativo engraçadinho")
+// } else {
+//     alert("parece nome de pepino em pó")
+// }
+
+
+// let idadeCliente = 21 
+// let testeLogicoTernario = idadeCliente >= 18 ? "Pode ver filme pornô" : "Vai assistir pepa pig";
+
+// let idadeCliente = 17
+// let testeLogicoTernario = idadeCliente >= 18 ? "Pode ver filme pornô" : "Vai assistir pepa pig"; 
+
+
+// var corpo = window.document.bury
+// var p1 = window.document.getElementsByTagName("p")[1]
+
+// window.alert(p1.innerTest)

@@ -1,0 +1,94 @@
+five icon da kenzie
+
+Agora vamos aprender como inserir aquele ícone que fica vísivel na aba do nosso navegador, facilitando a identificação dos sites que estamos acessando 
+
+
+
+<link rel="icon" href="" />         tag original
+
+
+<link rel="icon" href="https://kenzie.com.br/favicon.jpeg" />   tag editada Na nossa propriedade href, vamos inserir o seguinte caminho: 
+<link rel="icon" href="https://kenzie.com.br/favicon.jpeg" />    copiado do site 
+
+
+
+
+essa imagrm vai aparecer na aba no navegador bem pequeno
+
+podemos pesquisar por favicon para ver as dimencoes
+
+Bom para inserir o nosso ícone, vamos utilizar a tag <link rel="icon" href="" />
+
+Diferente das outras metatags, essa tag inicia com o nome link, e, possui dois atributos, sendo:
+
+    rel: que faz referência a qual tipo de link estamos nos relacionando
+    href: que parecido com o src da tag img faz referência ao caminho da imagem
+
+                                                                                         Outros formatos
+
+    Então será comum ver o valor do rel como apple-touch-icon 
+
+    <link rel="apple-touch-icon" href="" />
+    <link rel="apple-touch-icon" href="" />
+
+
+    especificar o tamanho dos dispositivos e qual caminho imagem deverá ser exibida de acordo com o dispositivo móvel, por meio do atributo size=""
+
+    <link rel="apple-touch-icon" size="128×128" href="icon-128px.png" />
+    <link rel="apple-touch-icon" size="128×128" href="icon-128px.png" />
+
+
+                                                                  
+
+
+
+
+
+
+                                                                       Referências de tamanhos 
+
+
+
+                                                                       Sizes 	Dispositivo
+                                                                       32×32 	
+                                                                       
+                                                                       Padrão para a maioria dos navegadores
+                                                                       57×57 	
+                                                                       
+                                                                       Padrão para a tela inicial do iOS e iPhone até a 3 geração
+                                                                       76×76 	
+                                                                       
+                                                                       Tela inicial iPad
+                                                                       96×96 	
+                                                                       
+                                                                       GoogleTV
+                                                                       120×120 	
+                                                                       
+                                                                       iPhone de retina
+                                                                       128×128 	
+                                                                       
+                                                                       Chrome Web Store icon e Tela de iniciar do Windows 8
+                                                                       144×144 	
+                                                                       
+                                                                       Ícone metro do IE10 *
+                                                                       152×152 	
+                                                                       
+                                                                       iPad
+                                                                       167×167 	
+                                                                       
+                                                                       iPad de Retina
+                                                                       180×180 	
+                                                                       
+                                                                       iPhone 6 plus
+                                                                       192×192 	
+                                                                       
+                                                                       Recomendação do Google Developer Web App
+                                                                       195×195 	
+                                                                       
+                                                                       Opera Speed Dial (Versão 15 e anteriores)
+                                                                       196×196 	
+                                                                       
+                                                                       Atalho na tela inicial do Chrome no Android
+                                                                       228×228 	
+                                                                       
+                                                                       Opera Coast icon                                                        

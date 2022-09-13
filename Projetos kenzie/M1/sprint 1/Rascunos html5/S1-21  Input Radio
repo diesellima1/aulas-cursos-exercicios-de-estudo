@@ -1,0 +1,57 @@
+ Os input do tipo rádio é uma tag que possue a mesma estrutura de um input padrão, porém com um tipo ou um type diferente
+
+Para criar esse input, fazemos o seguinte:
+
+<input type="radio"> 
+
+é um seletor de opções 
+
+A principio o input com o tipo radio, não irá permitir desfazer a seleção, até que exista outro input com que compartilhe do mesmo valor em seu atributo name=""
+
+<input type="radio" name="inputExemplo">
+<input type="radio" name="inputExemplo">
+
+Inserindo label
+
+Para inserir as labels para o nosso input, faremos da forma convencional, utilizando a tag label, e associando ao input por meio do id="" 
+
+
+<p>Selecione o método de contato</p>
+        
+<label for="telefone">Telefone</label>
+<input type="radio" name="inputExemplo" id="telefone">
+
+<label for="e-mail">E-mail</label>
+<input type="radio" name="inputExemplo" id="e-mail">
+
+Para testar se o valor correto está sendo enviado para o URL, iremos envolver nossos inputs com uma tag form e inserir um button com type="submit"
+
+
+<form>
+    <p>Selecione o método de contato</p>
+
+    <label for="telefone">Telefone</label>
+    <input type="radio" value="telefone" name="inputExemplo" id="telefone">
+
+    <label for="e-mail">E-mail</label>
+    <input type="radio" value="email" name="inputExemplo" id="e-mail">
+
+    <button type="submit">Enviar</button>
+</form>
+
+
+<form>
+    <p>Selecione o método de contato</p>
+
+    <label for="telefone">Telefone</label>
+    <input type="radio" value="telefone" name="inputExemplo" id="telefone">
+
+    <label for="e-mail">E-mail</label>
+    <input type="radio" value="email" name="inputExemplo" id="e-mail">
+
+    <button type="submit">Enviar</button>
+</form>
+
+
+sim ou nao 
+

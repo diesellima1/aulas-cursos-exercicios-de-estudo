@@ -1,0 +1,38 @@
+<form>
+  <label for="nome">Nome</label>
+  <input type="text" name="nome" id="nome" placeholder="Digite seu nome aqui..." required="true" />
+  <button type="submit">Enviar nome</button>
+</form>
+
+
+
+<form>
+    <label for="nome">Nome</label>  <!--nome para validação-->
+    <input type="text" id="nome" name="nome" placeholder="Digite seu nome aqui"/>
+
+    <label for="senha">senha</label>  <!--nome para validação-->
+    <input type="password" id="senha" name="senha" placeholder="Digite sua senha aqui"/>
+
+    <button type="submit" >Cadastrar</button></button>
+
+
+    <!--FORMULARIO COMPLETO VEREFICADO E OBRIGATORIO -->
+
+    <body>
+        <form>
+        <label for="nome">Nome</label>  <!--nome para validação label -->
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome aqui" required="true" />
+    
+        <label for="nome">E-mail</label>  <!--nome para validação-->
+        <input type="text" id="nome" name="nome" placeholder="Digite seu e-mail aqui" required="true" />
+    
+        <label for="">Confirmar senha</label>
+            <input type="password" placeholder="Digite sua senha novamente aqui" required="true" /> <!--password-->
+    
+        <label for="senha">Confirmar senha</label>  <!--nome para validação e campo-obrigatório required="true""-->
+        <input type="password" id="senha" name="senha" placeholder="Confirmar senha" required="true" />
+    
+        <button type="submit" >Cadastrar</button></button>
+    
+
+

@@ -1,0 +1,43 @@
+ O Textarea é uma tag voltada para a inserção de textos mais longos devido a sua estrutura visual, que poderá receber dimensões (atributos) de quantidade de linhas e colunas diretamente na tag, não seria nada interessante solicitar um texto ao usuário com um campo pequeno, não é? 
+
+ <textarea></textarea>
+
+ Placeholder
+
+Para inserir um texto dentro do nosso textarea, podemos fazer da mesma forma que utilizamos nos input's 
+
+<textarea placeholder="Digite sua mensagem aqui..."></textarea>
+
+Dimensões
+
+Como citado anteriomente, podemos determinar o tamanho do nosso campo de texto, utilizando as propriedades:
+
+    rows: Se refere a altura do campo de texto (Linhas)
+    cols: Se refere a largura do campo de texto (Colunas)
+
+
+Bom, mas como fazer a validação? Caso o formulário seja enviado com o campo vazio? 
+
+<textarea placeholder="Digite sua mensagem aqui..." cols="30" rows="10"></textarea>
+
+
+
+<textarea placeholder="Digite sua mensagem aqui..." cols="30" rows="10">
+Meu nome é
+</textarea>
+
+<textarea placeholder="Digite sua mensagem aqui..." required="true" cols="30" rows="10"></textarea>
+
+
+<label for="mensagem">Mensagem</label>
+<textarea id="mensagem" placeholder="Digite sua mensagem aqui..." required="true" cols="30" rows="10"></textarea>
+
+
+<label for="mensagem">Mensagem</label>
+<textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem aqui..." required="true" cols="30" rows="10"></textarea>
+
+
+ 
+
+<label for="mensagem">Mensagem</label>
+<textarea id="mensagem" placeholder="Digite sua mensagem aqui..." required="true" cols="30" rows="10"></textarea>

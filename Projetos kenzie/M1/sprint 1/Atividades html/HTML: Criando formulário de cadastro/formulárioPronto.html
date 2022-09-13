@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML: Criando formulário de cadastro</title>
+</head>
+<body>
+    <form>
+    <label for="nome">Nome</label>  <!--nome para validação label -->
+    <input type="text" id="nome" name="nome" placeholder="Digite seu nome aqui" required="true" />
+
+    <label for="mensagem">Descrição</label>
+<textarea id="mensagem" placeholder="Fale mais sobre você aqui..." required="true" cols="30" rows="5"></textarea>
+
+    <label for="nome">E-mail</label>  <!--nome para validação-->
+    <input type="text" id="nome" name="nome" placeholder="Digite seu e-mail aqui" required="true" />
+
+    <label for="planos">Módulo</label>
+    <select id="planos" name="plano"required>                <!-- select seletr de opçoes  -->
+        <option value="">Escolher Módulo</option>
+        <option value="free">M1</option>
+        <option value="premium">M2</option>
+        <option value="pro">M3</option>
+        <option value="pro">M4</option>
+        <option value="pro">M5</option>
+        <option value="pro">M6</option>
+    </select>
+
+    <label for="">Confirmar senha</label>
+        <input type="password" placeholder="Digite sua senha novamente aqui" required="true" /> 
+
+    <label for="senha">Confirmar senha</label>  <!--nome para validação e campo-obrigatório required="true""-->
+    <input type="password" id="senha" name="senha" placeholder="Confirmar senha" required="true" />
+
+    <p>Deseja receber novidades no seu e-mail?</p> <!-- Radio seletor com chave de  sim ou nao -->
+<label for="e-mail">Sim</label>
+<input type="radio" name="inputExemplo">
+<label for="e-mail">Não</label>
+<input type="radio" name="inputExemplo">
+<button type="submit" >Cadastrar</button></button>
+
+</bory>
+
+</Html>

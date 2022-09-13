@@ -1,0 +1,24 @@
+Para criar um formulário iremos utilizar o tag <form></form>
+
+<form></form>
+
+
+
+Input: Campo de texto, número, data, arquivos, url, delimitadores, cores e etc
+Select: Campo de opções
+Texarea: Campo para textos longos e formatação
+
+
+01-20
+A nossa tag input irá receber somente atributos ao invés de filhos (children) 
+
+O principal atributo de um input é o type="", nesse atributo passaremos um valor do tipo do nosso input 
+
+
+Nos próximos exemplos iremos utilizar o input com o tipo "text" como exemplo
+<input type="text" />
+
+Além do atributo type podemos passar outros atributos bem interessantes para compor o nosso input 
+
+
+

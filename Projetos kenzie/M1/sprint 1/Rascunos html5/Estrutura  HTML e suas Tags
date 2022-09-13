@@ -1,0 +1,237 @@
+                         Meu repositorio de O HTML e suas Tags
+                         
+                         
+                        estrutura html com utf8 e lang
+
+ <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+  <title></title>
+    </head>    
+    <body>
+
+    </body>
+</html> 
+                   
+Esqueleto html simples 
+<!DOCTYPE html>
+<html>
+    <head>
+    <title></title>
+    </head>    
+    <body>
+
+    </body>
+</html> 
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+                         exemplo de construção 
+                         
+                         <tag>some content</tag>
+
+
+<pizza>
+  <topping>pineapple</topping>
+  <topping>ham</topping>
+  <topping>cheese</topping>
+</pizza>
+
+
+<tag attribute="value">some content</tag>
+
+ self close
+ Algumas tags têm fechamento próprio (self close). Essas tags normalmente não envolvem algum conteúdo. A tag <img> é uma tag de fechamento próprio bem comum. Como você pode ver, ainda há uma / no final da tag. Observe também o uso dos atributos. 
+ 
+  <img src="path/to/image/file.jpg" alt="image description" />
+
+
+
+<a></a>
+é utilizada para descrever um link e pode ser utilizada no decorrer da construção do seu texto.
+
+ <a href="link url" alt="descrição para leitores de tela">Texto clicável</a>
+
+ <em>Texto relevante</em>
+ 
+ pazer uma citação da frase de um livro ou título use a tag <cite></cite>.
+ 
+ "Eu acredito que às vezes são as pessoas que ninguém espera nada que fazem as coisas que ninguém consegue imaginar." - Turing, Alan
+ 
+ <strong>Este trecho está em negrito</strong> 
+
+
+<div>
+é usado principalmente para agrupar elementos para estilização e posicionamento. 
+
+<div>
+  <p>Qualquer tipo de conteúdo aqui.</p>
+</div>
+
+
+<span>
+Ele é usado principalmente para fins de estilo
+ele não vai adicionar novas linhas acima e abaixo do span.
+
+<p>Qualquer tipo de conteúdo<span>aqui</span>.</p>
+
+<pre>
+Elemento especial para manter os espaçamentos aki pode usar art de texto ! 
+textos pre formatados pois o html não vai corrigir os espaços 
+
+
+&quot; editx &quot 
+é uma intidade html ele subistitui as "aspa" 
+"=&quot 
+<=&lt; 
+>=&gt;
+&=&amp;  
+
+https://www.w3schools.com/html/html_entities.asp  HTML Entities
+
+utl8 ajua com a marcação
+
+
+
+                       As tag`s de título não são self close, o que significa que elas precisam ser abertas e fechadas. 
+
+<h1>Sou um título</h1>
+
+
+    Primeiro abrimos a tag de título <h1>
+    Fechamos a tag <h1>
+    Entre a abertura e o fechamento inserimos o texto, o conteúdo do título
+
+<h1>
+Sou um título
+</h1>
+<p>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  Cras blandit elit eu nisl rutrum maximus. Sed suscipit elementum tortor. 
+  Sed non mollis erat. "Sed vestibulum ornare risus a porta".
+</p>
+
+Links uteis 
+
+https://developer.mozilla.org/pt-BR/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML
+https://developer.mozilla.org/pt-BR/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals
+
+
+s105
+
+ Exemplos de elementos de linha
+
+    span
+
+    Esta tag não possui valor semântico, ela é simplesmente uma tag genérica
+    strong
+    em
+    a
+    img
+
+
+ Exemplos de elementos de bloco
+
+    div
+
+    Esta tag não possui valor semântico, ela é simplesmente uma tag genérica
+    h1
+    p
+    ul
+    ol
+    form
+
+
+no navegador e no codigo 
+Html Html
+
+Html
+
+Html
+
+
+<section>
+    <span>
+        Html
+    </span>
+    <span>
+        Html
+    </span>
+    <div>
+        <p>
+            Html
+        </p>   
+    </div>
+    <div>
+        <p>
+            Html
+        </p>   
+    </div>
+</section>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

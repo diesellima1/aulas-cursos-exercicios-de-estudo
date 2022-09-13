@@ -1,0 +1,39 @@
+<a > . A tag de âncora cria um hiperlink.
+    texto ou elemento entre as tags de abertura e fechamento <a> é o que se torna o link.
+
+        href
+        É a URL ou o destino para onde o hiperlink aponta. 
+
+        target
+        Indica onde exibir a URL do link. Abaixo estão os valores mais utilizados. 
+
+        _self: carrega a URL na mesma janela do navegador que a atual. Este é o comportamento padrão se o atributo target não for usado.
+
+
+        _blank: carrega a URL numa nova janela ou aba do navegador, de acordo com a configuração atual do navegador. 
+
+
+
+
+        //o hiperlink externo abre em uma nova janela 
+<a href="http://www.google.com" target="_blank">google.com</a>
+
+//O link externo abre na mesma janela
+<a href="http://www.google.com" >google.com</a>
+
+//Link de e-mail que abre o cliente de e-mail padrão dos usuários
+<a href="mailto:user@example.com" >Email User</a>
+
+//leva a outro arquivo local no mesmo site
+<a href="#page-section" >Link to page sectionr</a>
+
+//Link externo que abre em uma nova janela/aba 
+//usando uma imagem em vez de um texto
+
+<a href="https://developer.mozilla.org/pt-BR/" target="_blank">Link to page section
+  <img src="https://mdn.mozillademos.org/files/6851/mdn_logo.png" />
+</a>
+
+
+
+

@@ -1,0 +1,35 @@
+ HTML: Tags semânticas são separadores de contúdo da mesma classe dentro do código "como uma mãe organizando a casa " elas guardam como se fossem pastas ou gavetas 
+
+ s motores de busca, irão ler o nosso site e identificar os tipos de 
+ conteúdos alí existentes, quais são mais importantes, onde fica o rodapé, onde fica o menu e etc... 
+
+
+ <body>
+  <!-- Menu -->    
+  <div> 
+    <a href="">Início</a>
+    <a href="">Sobre</a>
+    <a href="">Contato</a>
+  </div>
+  <!-- Conteúdo Principal -->  
+  <div> 
+    <h1>Texto principal da página</h1>
+    <p>Texto de descrição</p>
+    <a href="">Link</a>
+  </div>
+</body>
+
+
+
+a tag <main></main>, envolvendo quais os elementos terão uma importância maior naquela página <!--significa principal em inglês-->
+
+
+<main>
+    <!-- Aqui fica o conteúdo principal -->
+</main>
+
+
+
+
+Essa tag se chama <article></article>, ela pode englobar qualquer conteúdo relacionado a uma postagem, notícia e afins 
+

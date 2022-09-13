@@ -1,0 +1,43 @@
+O Select é uma tag que possui uma estrutura composta por mais de um elemento, sendo eles a própia tag <select></select> e a tag <option></option>
+
+
+<label for="planos">Planos</label>
+<select id="planos">
+    <option>Escolher plano</option>
+    <option>Free</option>
+    <option>Premium</option>
+    <option>Pro</option>
+</select>
+
+
+O nossa tag <option></option> deverá receber um atributo que representa qual valor será enviado para o servidor, por exemplo: 
+
+<option value="gratis">grátis</option>
+
+<option value="free">grátis</option>
+
+
+<form>
+    <label for="planos"></label>
+    <select id="planos" name="plano">                <!-- select seletr de opçoes  -->
+        <option value="">Escolher Módulo</option>
+        <option value="free">Free</option>
+        <option value="premium">Premium</option>
+        <option value="pro">Pro</option>
+    </select>
+</form>
+
+
+<form>
+    <label for="Módulo">Módulo</label>
+    <select id="Módulo">
+        <p></p>
+        <option>Escolher Módulo</option>
+        <option>M1</option>
+        <option>M2</option>
+        <option>M3</option>
+        <option>M4</option>
+        <option>M5</option>
+        <option>M6</option>
+    </select>
+ </form>

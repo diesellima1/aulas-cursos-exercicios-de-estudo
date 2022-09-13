@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imputs</title>
+</head>
+<body>
+    <input type="text" placeholder="input +type= text placeholder "> <!--comando intput+type+lista dos comandos como password-->
+</body>
+</html>
+
+
+
+<input />
+
+<input type="text" placeholder="Digite seu nome aqui..." />  <!--texto indicador dentro da caixa-->
+
+<input type="text" placeholder="Digite seu nome aqui..." maxlength="10" /> <!--limitado so alterar o valor 10-->
+
+<input type="text" placeholder="Digite seu nome aqui..." required="true" />  <!--impede de enviar,-->
+
+<input type="password" placeholder="Digite sua senha aqui..." required="true" /> <!--password-->
+
+<input type="number" placeholder="Digite seu número aqui..." required="true" /><!--1234...-->
+
+<label>Nome</label>
+<input type="text" placeholder="Digite seu nome aqui..." required="true" />  <!--identificador fixo-->>
+
+<!--
+    Atributo for no label
+    Atributo id no input
+-->
+
+<label for="nome">Nome</label>
+<input type="text" placeholder="Digite seu nome aqui..." required="true" id="nome" /> <!--"clicado" seja ativado -->
+
+<input type="text" name="nome" placeholder="Digite seu nome aqui..." required="true" id="nome" /> <!-- armazenar os valores do formulário em algumas "variáveis" e passá-las,
+     a principio, na URL do navegador, após o endereço do documento .html -->
+
+     <!--mais completo que o anterior com botão enviar -->
+     <form>
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome" placeholder="Digite seu nome aqui..." required="true" />
+        <button type="submit">Enviar nome</button>
+      </form>
+
+
+
+
