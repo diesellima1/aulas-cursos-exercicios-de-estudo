@@ -1,6 +1,6 @@
-Passo1- Abrir o depurador usando o atalho; ctrl+shift+D
-Passo2- Click em executar e depurar
-Passo3- Em inspeção digite a expressão a ser observada
-Passo4- Abra o terminal e procure pelo console de depuração 
-Passo5- Agora use a tecla de atalho F10 para ver passo a passo ou use o atalho F5 para fazer de forma instantânia
-Passo6- Basta analisar o retorno do resultado ! 
+- Passo1- Abrir o depurador usando o atalho; ctrl+shift+D
+- Passo2- Click em executar e depurar
+- Passo3- Em inspeção digite a expressão a ser observada
+- Passo4- Abra o terminal e procure pelo console de depuração 
+- Passo5- Agora use a tecla de atalho F10 para ver passo a passo ou use o atalho F5 para fazer de forma instantânia
+- Passo6- Basta analisar o retorno do resultado ! 
