@@ -12,3 +12,6 @@ while (c <=5) { //EQUANTO c FOR MENOR QUE 5 SEGUE O LOOP
 for(var c = 1; c <= 5; c++) {
     console.log(c)
 }
+
+
+//FUNCIONADO!
