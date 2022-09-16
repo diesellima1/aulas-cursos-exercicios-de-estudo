@@ -17,6 +17,15 @@ section {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
 }
 
+#dados {
+    text-align: center;
+}
+
+#res {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.123);
+}
+
 footer {
     color: white;
     text-align: center;
