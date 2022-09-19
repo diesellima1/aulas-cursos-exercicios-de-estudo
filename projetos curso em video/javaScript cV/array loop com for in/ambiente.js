@@ -72,5 +72,5 @@ A posição 7 tem o valor 7 ambiente.js:60:11
 A posição 8 tem o valor 8 ambiente.js:60:11
 A posição 9 tem o valor 9 ambiente.js:60:11
  
-obs:"pos = posição"
+obs: "pos = posição"
 */
