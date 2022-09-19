@@ -84,3 +84,4 @@ console.log(`Push antes de sort: ${numPs}`) // resposta 2
 
 
 
+
