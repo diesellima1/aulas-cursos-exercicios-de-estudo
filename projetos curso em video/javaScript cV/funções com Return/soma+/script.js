@@ -1,18 +1,22 @@
-//FUNÇÕES - RETURN
-
-//  DESCOBRIR SE UM NÚMERO É PAR OU ÍMPAR
-function parImpar(n) { //"n = número " parImpar recebe um número
-    if (n%2 == 0) { // dividido por 2 inteiro e resto igual a zero n é par  
-        return "Par!"
-    } else {
-        return "Ímpar"
-    }
+//FUNÇÕES - RETURN  SOMA+
+function soma(n1,n2) {
+    return n1 + n2
 }
-//CHAMAR A FUNÇÃO FORA DO BLOCO COM UMA VARIÁVEL 1
-console.log(parImpar(223)) //resto 1
-//CHAMAR A FUNÇÃO FORA DO BLOCO COM UMA VARIÁVEL 2
-let res = parImpar(4) // resto 0 
-console.log(res) //"res = resultado"
+console.log(soma(2,5))
+//respasta: 7 
 
-//* ACHAMADA PODE SER FEITA DE DUAS MANEIRAS COMO VISTO NO EXEMPLO 1 E 2 
 
+//NaN: Not a Number
+function somaNan(n1,n2) {
+    return n1 + n2
+}
+console.log(somaNan(2,)) //Nan faltou um parametro para somar
+//resposta: Nan
+
+
+//PARAMETROS OPCIONAIS PARA EVITAR O NAN "=0"
+function somaOp(n1=0,n2=0) { //add =0
+    return n1 + n2
+}
+console.log(somaOp(7)) //soma 7 com nada é nada 
+//resposta: 7 
