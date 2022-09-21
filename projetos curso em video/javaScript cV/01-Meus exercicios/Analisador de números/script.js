@@ -56,7 +56,7 @@ function finalizar() { //ligado com let valores = [] L.4
         res.innerHTML += `<p>\u{1F4C8}. O Maior valor informado foi: ${maior}</p>`
         res.innerHTML += `<p>\u{1F4C9}. O menor valor informado foi: ${menor}</p>`
         res.innerHTML += `<p>\u{1F4F1}. Somando todos os valores temos: ${soma}</p>`
-        res.innerHTML +=  `<p>\u{2696}. A Média dos valores digitados é: ${media}</p>`
+        res.innerHTML += `<p>\u{2696}. A Média dos valores digitados é: ${media}</p>`
     }
 }
 
