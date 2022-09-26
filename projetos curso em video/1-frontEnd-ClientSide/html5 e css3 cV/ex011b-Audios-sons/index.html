@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio sons</title>
+</head>
+<body>
+    <h1>Reproduzir Áudio</h1>
+    <!-- Modo 1 simples -->
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <figure>
+        <img src="img/pexels-andrea-piacquadio-3781688.jpg" alt="mulher ouvindo música no celular">
+    </figure>
+    <h2>Teste 1</h2>
+    <audio src="midia/happy-mistake.mp3" controls autoplay></audio>
+    <!-- 
+Passo1: <audio src=""></audio>
+Passo2: <audio src="" controls ></audio>
+Passo3: <audio src="LOCAL DO ÁUDIO" controls autoplay ></audio>
+Formatos:mp3 - wav - ogg
+ ATENCÃO; essa maneira é simples e limitada pode não funcionar em todos os navegadores 
+-->
+<h2>Teste 2</h2>
+<!-- modo 2 excluindo src="" e usanod o source src-->
+<audio preload="metadata" autoplay controls loop> <!--parametros adicionais-->
+    <source src="midia/happy-mistake.mp3" type="audio/mpeg">
+    <source src="midia/happy-mistake.ogg" type="audio/ogg">
+    <source src="midia/happy-mistake.wav" type="audio/wav">
+    <p>Infelizmente o seu navgador não consegue reproduzir áudios. <a href="midia/happy-mistake.mp3">click aqui para baixar o arquivo mp3</a></p>
+
+    <!-- 
+        preload="metadata" carrega so alguns arquivos leves (recomendado para arquivos grandes)
+        preload="auto" carrega tudo sem o usuário pedir e pode pesar de mais a navegaćão
+        preload="none" não carrega nada e pode ser mais lento que os anteriores só vai carregar quando os usuários pedirem
+    -->
+</audio>
+</body>
+</html>
+
