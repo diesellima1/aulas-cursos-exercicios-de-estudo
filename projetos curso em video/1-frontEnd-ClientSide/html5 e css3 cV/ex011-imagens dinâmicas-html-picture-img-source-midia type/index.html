@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em html5</title>
+</head>
+<body>
+    <h1>Images dinâmica</h1>
+    <P>Tente abrir esse site em vários dispositivos deferentes ou simplismente aumente e diminua o tamanho do seu navegador</P>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png"><!-- min for max -->
+        <source media="(max-width:1050px)" srcset="imagens/foto-m.png" type="image/png"><!-- add formato depois da bara -->
+        <img src="imagens/foto-g.png" alt="imagens/flexivel">
+    </picture>
+</body>
+</html>
+<!--  -->
+<!-- funcionando ao dimmuir o tamanho da janela do navegador aimagem grande passa para a imagem media e a media passsa para a imagem pequena sem aparecer a borra de rolegem 
+
+passo 1 <picture></picture>
+passo 2 <img src="imgGrande" alt="uma imagem grande">  
+passo 3 source:media:type 
+passo 4 <source media="(EDIT-ME-width: TAMANHO EMpx)" srcset="ROTA DA IMAGEM ADD MANUALMENTE" type="image/ADDFORMATO DA IMAGEM">
+        IMPORTANTE: a ordem de tamanho deve ser respeitada se não ela não vai funcionar -->
