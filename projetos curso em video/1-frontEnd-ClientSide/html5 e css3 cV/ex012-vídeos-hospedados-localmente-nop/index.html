@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídes com HTML 5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor ambas as maneiras comsomem muito trafego de dados (Não recomendado)</p>
+    <!-- FORMA SIMPLES PARA 1 VÍDEO -->
+    <h2>Teste 1 SIMPLES</h2>
+    <video src="midia/03-meu-video-hd-1280x720 .webm" width="60px" controls ></video>
+
+    <!-- Mesmo vídeo com varios formatos para vários tipos de navegadores -->
+    <h2>Teste 2 mesmo vídeo com formatos diferentes para navegadores</h2>
+    <video width="150px" poster="imagens/cavalo-640x427-pexels.jpg" controls >
+        <source src="midia/01-meu-video hd-1280x720 .mp4" type="video/mp4">
+        <source src="midia/02-meu-video-hd-1280x720 .m4v" type="video/mp4">
+        <source src="midia/03-meu-video-hd-1280x720 .webm" type="video/webm">
+        <p>O seu navegador não tem compatibilidade com reprodução de vídeos</p>
+        <!-- OBS: vídeos mudo -->
+    </video>
+</body>
+</html>
