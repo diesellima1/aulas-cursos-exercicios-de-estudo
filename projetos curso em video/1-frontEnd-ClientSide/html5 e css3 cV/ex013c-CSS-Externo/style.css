@@ -1,0 +1,56 @@
+@charset "UTF-8"; 
+/* regra pra compatibilidade de caracteres */
+
+body {
+    background-color: lightgoldenrodyellow;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    /* cor de fundo; tipo de fonte e tamanho da fonte em pixel */
+}
+
+h1 {
+    color: maroon;
+    background-color: goldenrod;
+    /* cor da fonte com cor de fundo  */
+}
+
+h2 {
+    color: darkred;
+    /* cor da fonte */
+}
+
+p {
+    text-align: justify; 
+    /* alinhamento do parágrafo */
+}
+
+.h2green {
+    color: green;
+    /* seletor de class com cor na fonte verde */
+}
+
+/* 
+DICA:Para chamar uma class ou um id tem que usar ponto para classe e hastag para id 
+id= #
+class= . 
+exemplo criando uma identificação para <h2>Lorem</h2>
+*No html:
+passo1:<h2 class="">Lorem</h2>
+passo2:<h2 class="h2green">Lorem</h2>
+passo:seletor criado agor ir para o css
+*css:
+passo1:digitar ponto antes se digitar o seletor como na img da linha 27 acima 
+passo2:o seu seletor está pronto para ser declarado 
+
+.h2green {
+
+}
+
+em casado de usar id subistitui o ponto por #
+h2 id="h2green">Lorem</h2>
+
+# h2green {
+
+}
+
+*/
