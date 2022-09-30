@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+/* mesma fonte para toda a pagina  sem serifa*/
+    /* height: 100%; */
+/* altura do degrade  */
+}
+
+body {
+    background-image: linear-gradient( to right, #f1d8c9, #f2c3a7);
+    /* gradiente */
+}
+
+main {
+    background-color: white;
+    /* div semântica man branca */
+    border-radius: 10px;
+    /* arendondando as bordas da div main */
+    box-shadow: 5px 5px 15px rgba(136, 109, 93, 0.616);
+    /* sentido horário sendo lado-baixo-espalhar-transparência  */
+    width: 600px;
+    /* limitando a largura */
+    padding: 10px;
+    /* margem das letras com a div main */
+    margin: auto;
+    /* centralizando no meio da tela independente do tamanho da janela  */
+}
+
+h1 {
+    color: #f39309;
+    /* cor da letra em h1*/
+    text-align: center;
+    /* centralizando o título */
+    text-shadow: 1px 2px 0px rgba(129, 77, 5, 0.726);
+    /* sombra no título 1px direcão 2px abaixo 0px espalhamento */
+}
+
+h2 {
+    color: #125189;
+    /* cor da letra em h2 */
+}
+
+p {
+    text-align: justify;
+    /* alinhamneto do parágrafo */
+}
