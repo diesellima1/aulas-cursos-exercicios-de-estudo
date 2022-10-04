@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamanho de fontes em CSS</title>
+    <style>
+/* para usar o work sans tem que usar uma linha especial: @import url("URL"); */
+        body {
+            font-family: "Work Sans", Arial, Helvetica, sans-serif;
+          
+            font-size: 1m;
+            font-weight: bolder;
+            /* 100-900 ou lighter bold bolder */
+            font-style: italic;
+            /* texro em italico */
+            text-decoration: underline;
+            /* texto sublinahdo */
+        }
+
+        h1 {
+            font-family: "Work Sans", sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+
+            /* shorthand (mesmo código em uma linha)
+            ordem obrigatória:
+             font-style / font-weight / font-size / font-family
+            */
+            font: italic bolder 3em "Work Sans", sans-serif ;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem repellat commodi at, earum vero magnam assumenda ad doloribus sequi repudiandae magni perferendis omnis. Itaque doloribus laborum animi porro dolorem eum.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis vero libero fugit illo incidunt, corrupti maxime. Ex a deserunt maiores quas culpa harum accusantium doloribus, impedit iure consequuntur nobis temporibus?
+    </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore autem neque molestiae facere vero error culpa impedit maxime, sunt velit, nulla alias aliquid. Error, aut dolorum ullam ab adipisci ut.</p>
+</body>
+</html>
