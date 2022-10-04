@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fontes Externas</title>
+<!-- cria a regra com a fonte e chama ela no seletor OBS:regra sempre acima de tudo ou depois do reset-->
+    <style>
+     @font-face {
+        font-family: "Love";
+        src: url("fonts/love\ larry\ otf.otf") format("opentype"), url("fonts/love\ larry\ ttf.ttf") format("truetype"); 
+        font-weight: normal;
+        font-style: normal;
+        /* para os dois formatos otf e ttf */
+     }
+
+     @font-face {
+        font-family: "Love2";
+        src: url("fonts/Filxgirl.TTF") format("truetype"); 
+        font-weight: normal;
+        font-style: normal;
+        /* apenas ttf */
+     }
+
+     @font-face {
+        font-family: "Love3";
+        src: url("fonts/love\ story\ ttf.ttf") format("truetype"); 
+        font-weight: normal;
+        font-style: normal;
+     }
+
+     body {
+        font-family: Arial, Helvetica, sans-serif;
+     }
+
+     h1 {
+        font-family: "Love", Times, serif;
+        font-size: 3em;
+        font-weight: normal;
+     }
+
+     .h2tit-02 {
+         font-family: "Love2", Times, serif;
+        font-size: 3em;
+        font-weight: normal;
+     }
+
+     .h2tit-03 {
+         font-family: "Love3", Times, serif;
+        font-size: 3em;
+        font-weight: normal;
+     }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto facere non quibusdam eligendi repellat quam fuga rerum sed numquam ut excepturi asperiores mollitia qui dolor animi et repellendus, voluptates sit.</p>
+    <h2 class="h2tit-02">Olá, Mundo!</h2>
+    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero molestias sit necessitatibus hic, consequuntur labore earum sunt saepe architecto quo corporis, sed autem perspiciatis dolore voluptatem dolorum ratione quasi pariatur.</P>
+    <h2 class="h2tit-03">Olá, Mundo!</h2>
+    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur dicta provident placeat incidunt alias, ullam aliquid quaerat, delectus maiores debitis, neque officiis commodi cupiditate? Est nulla id earum recusandae molestias.</span>
+</body>
+</html>
+
+<!-- site para fontes: https://www.dafont.com/pt/theme.php?cat=801 -->
