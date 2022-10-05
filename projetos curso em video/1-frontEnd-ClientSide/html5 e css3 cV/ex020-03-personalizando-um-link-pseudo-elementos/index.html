@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        
+/*         
+            SELETORES PESONALIZAVEIS
+            #  = id
+            .  = class
+            :  = pseudo-class
+            :: = peseudo-element
+            >  = clildren
+*/
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+/* PSEUDO CLASS */
+        a {
+            color: red;
+            /* mudar a cor do link visitado ou não */
+            text-decoration: none;
+            /* removendo o sublinhado do link */
+            font-weight: bold;
+            /* link em negrito peso da fonte */
+            /* configuração generica  */
+        }
+
+        a:visited {
+            color: darkred;
+            /* trocando a cor padrão roxa para vermelho escuro depois de visitado */
+        }
+
+        a:hover {
+            color: blue;
+            /* troca de cor ao passar o mouse por cima */
+            text-decoration: underline;
+            /* pseudo class ficar sublinhado ao passar o mouse por cima */
+        }
+
+        a:active {
+            color: yellow;
+            /* link ativo quando clicado ele troca de cor */
+        }
+
+/* PSEUDO ELEMTOS */
+        a::after {
+            content: " [link]";
+            /* aqui abre espaço entre aspas e couchetes */
+            text-decoration: none;
+            /* removendo o negrito */
+            font-weight: normal;
+            /* fonte normal */
+            color: darkgray;
+            /* cor cinza claro */
+/* podemos  fazer coisas aparecer antes e depois como símbulos html5 */
+        }
+
+        /* ADD SÍMBULO ESPECIAL */
+        .especial {
+            background-color: rgb(255, 140, 140);
+            /* classe especial vai receber um plano de fundo */
+        }
+
+        .especial::before {
+            content: " ⇒";
+            /* recebe antes */
+        }
+
+        .especial::after {
+            content: "⇐";
+            /* recebe depois */
+        }
+
+
+
+    </style>
+</head>
+<body>
+   <ul>
+       <li><a href="https://github.com/diesellima1" target="_blank" rel="external">Repositório GitHub</a></li>
+       <li><a href="https://www.youtube.com/" target="_blank" rel="external" class="especial">YouTube</a></li>
+       <li><a href="https://www.cursoemvideo.com/" target="_blank" rel="external">Site cursoEmVídeo</a></li>
+       
+   </ul>
+</body>
+</html>
