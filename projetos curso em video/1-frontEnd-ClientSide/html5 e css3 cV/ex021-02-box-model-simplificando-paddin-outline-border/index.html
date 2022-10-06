@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model parte2</title>
+    <style>
+        /* BOX-LEVEL */
+        h1 {
+            margin: auto;
+            /* centralizando */
+            margin-top: 50px;
+            /* criando espaço em cima */
+            margin-bottom: 50px;
+            /* criando espaço embaixo */
+            background-color: lightslategray;
+            /* cor da box */
+            height: 300px;
+            /* altura */
+            width: 300px;
+            /* largura */
+            border: 10px solid darkslategrey;
+            /* espesura estilo e cor da borda */
+            padding: 10px;
+            /* shorthand sentido horário: cima direita baixo esquerda 1 VALOR "IGUAL PARA TODOS"*/
+
+              /*  ADD CONTORNO */
+            outline: 5px dashed salmon;
+
+            /*
+            BOX SIZE: 
+            heigth e width
+            */
+          
+        }
+        /* INLINE-LEVEL */
+        a {
+            border-width: 10px;
+            border-style: double;
+            border-color: blueviolet;
+            
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            /* padding sem usar o shorthand mas sempre no sentido horário*/
+        }
+
+
+        /* 
+        SIMPLIFICADOS :
+        LINHA-18
+            border-width: 10px;
+            /* espessura da borda(largura)
+            border-style: solid;
+            /* estilo da borda 
+            border-color: darkslategrey;
+            /* cor da borda 
+        LINHA-20
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            OU
+            padding: 10px 10px 10px 10px;
+            "TAMBÉM FOI SIMPLIFICADO"
+
+        LINHA-24
+            outline-width: 5px;
+            /* espessura-largura
+            outline-style: dashed;
+            /* estilo do contorno
+            outline-color: salmon;
+            /* a cor do contorno
+        */
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são Exemplos de box-level, mas os links <a href="#">são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona</p>
+</body>
+</html>
