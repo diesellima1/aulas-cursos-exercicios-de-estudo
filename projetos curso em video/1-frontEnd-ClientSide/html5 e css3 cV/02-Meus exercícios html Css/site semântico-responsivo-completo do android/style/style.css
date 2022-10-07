@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Spice&display=swap');
+/*  font-family: 'Bebas Neue', cursive;
+    font-family: 'Bungee Spice', cursive; */
+
+@font-face {
+    font-family: "idroid";
+    src: url("../fontes/idroid.otf") format("opentype"), url("fontes/idroid.ttf") format("truetype"); 
+    font-weight: normal;
+    font-style: normal;
+    /* para os dois formatos otf e ttf 
+     nesse caso só temos otf mas deixei o outro para consulta */
+    }
+
+@font-face {
+    font-family: "Droid-Robot";
+    src: url("../fontes/doridrobot.ttf") format("truetype"); 
+    font-weight: normal;
+    font-style: normal;
+    /* Bugdroid: https://www.dafont.com/pt/droid-robot.font */
+    }
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+        
+    :root {
+        --cor0: #55E65C;
+        --cor1: #0FE01A;
+        --cor2: #0CAD14;
+        --cor3: #246127;
+        --cor4: #07610B;
+        --cor5: #063d10;    
+        /* cores Monocromático: */
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-idroid: "idroid", cursive;
+    --fonte-droidRobot: "Droid-Robot", cursive;
+    }
+
+body {
+    font-family: var(--fonte-padrao);
+    background-image: linear-gradient(to right, var(--cor4), var(--cor2), var(--cor0));
+    margin: 0px;
+   } 
+
+   header {
+    background-color: var(--cor4);
+   }
+
+   header > h1 {
+    color: white;
+    font-family: var(--fonte-destaque);
+   }
+
+   header > p {
+    color: white;
+   }
+
+   nav {
+    background-color: var(--cor5);
+    padding: 10px;
+   }
+
+   nav > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-right: 30px;
+   }
+
+   nav > a:hover {
+    text-decoration: underline;
+   }
+
+   main {
+    background-color: white;
+   }
+
+   main h1 {
+    color: var(--cor4);
+    font-family: var(--fonte-idroid);
+   }
+
+   main h2 {
+    font-family: var(--fonte-idroid);
+   }
+
+   h2 {
+    color: var(--cor3);
+    font-family: var(--fonte-idroid);
+   }
+
+   article > aside {
+    background-color: rgb(165, 165, 165);
+   }
+
+   footer {
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    padding: 4px;
+    margin: 0px;
+   }
+
+   footer > p {
+    margin: 0px;
+   }

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Esta página conta a origem do mascote android chamado Bugdroid">
+    <title>Teste de Responsividade</title>
+
+<style>
+    body {
+        background-color: gray;
+    }
+
+    main {
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: justify;
+
+        min-width: 280px;
+        max-width: 800px;
+        margin: auto;
+        /* deixando os textos responsivos com ajuda do window Resizer no chrome */
+    }
+
+    img {
+        width: 100%;
+    /* imagens responsivas  */
+    }
+
+</style>
+</head>
+<body>
+    <!-- teste -->
+    <main>
+        <h1>Testando Responsividade</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, in impedit ab aspernatur dolorum, praesentium quo quam laboriosam dicta beatae officiis, neque fugiat expedita doloribus id sed odit adipisci mollitia.
+        Beatae tenetur, quis explicabo dolores sint maxime earum accusantium? Explicabo fuga eveniet mollitia enim iure voluptas eius molestiae error at porro veniam ex, sequi provident ab nesciunt, iste beatae dicta.
+        Ut commodi quaerat fugit suscipit numquam dicta alias? Voluptates temporibus expedita asperiores, quo facere maxime quibusdam ullam aspernatur rerum laboriosam in deleniti amet harum numquam eligendi blanditiis molestiae eius doloribus!</p>
+        <!-- picture/source precia de duas imagens sendo um agrande e outra pequena para gerar o efeito no limite maxímo -->
+        <picture>
+            <source media="(max-width: 600px)" srcset="../image/irina-blok-pq.jpg">
+            <img src="../image/irina-blok.jpg" alt="irina-blok criadora di Bugdroid">
+        </picture>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, in impedit ab aspernatur dolorum, praesentium quo quam laboriosam dicta beatae officiis, neque fugiat expedita doloribus id sed odit adipisci mollitia.
+        Beatae tenetur, quis explicabo dolores sint maxime earum accusantium? Explicabo fuga eveniet mollitia enim iure voluptas eius molestiae error at porro veniam ex, sequi provident ab nesciunt, iste beatae dicta.
+        Ut commodi quaerat fugit suscipit numquam dicta alias? Voluptates temporibus expedita asperiores, quo facere maxime quibusdam ullam aspernatur rerum laboriosam in deleniti amet harum numquam eligendi blanditiis molestiae eius doloribus!</p>
+    </main>
+</body>
+</html>
+
+<!-- essa não é a melhor opção apenas para fins didáticos -->
