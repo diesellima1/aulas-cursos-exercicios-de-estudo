@@ -65,7 +65,7 @@ body {
     /* 3em = 48px */
     font-weight: normal;
     /* muda pouca coisa  */
-    margin-bottom: 20px;
+    padding-bottom: 20px;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
     /* sombra no texto do título */
    }
@@ -78,7 +78,7 @@ body {
     padding-right: 10px;
     padding-left: 10px;
     margin: auto;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
    }
 
