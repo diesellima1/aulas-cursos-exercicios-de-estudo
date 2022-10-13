@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor0: white;
+    --cor1: black;
+
+    --fonte-padrao: Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-family: var(--fonte-padrao);
+    background-image: url(https://raw.githubusercontent.com/gustavoguanabara/html-css/master/imagens/mascote.png);
+    background-size: 100px 100px;
+    background-repeat: repeat
+    /*
+    TIPOS: 
+    background-repeat: repeat;
+    background-repeat: no-repeat;
+    background-repeat: repeat-x;
+    background-repeat: repeat-y; 
+    */
+}
+
