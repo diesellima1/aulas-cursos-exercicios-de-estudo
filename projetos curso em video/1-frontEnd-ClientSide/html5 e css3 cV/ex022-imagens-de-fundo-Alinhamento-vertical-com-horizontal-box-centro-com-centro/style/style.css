@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor0: white;
+    --cor1: black;
+
+    --fonte-padrao: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 99vh;
+    font-family: var(--fonte-padrao);
+   
+}
+
+#container  {
+    background-image: url(../image/target001.png);
+    background-size: 100% 100%;
+    position: relative; /* padrão nao precisa por em algumas configurações*/
+    height: 97vh;
+    padding: 10px;
+    background-color: purple;
+}
+
+#conteudo {
+    background-image: url(../image/target001.png);
+    background-size: 100% 100%;
+    position: absolute; /* agora pode configurar as proproedades de linha e colona 50% "left e top" */
+    height: 200px;
+    width: 400px;
+    background-color: yellow;
+
+    left: 50%;
+    top: 50%;
+
+/* casar os dois alvos centro com centro */
+transform: translate(-50%, -50%);
+}
+
+ 
+
