@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor0: white;
+    --cor1: black;
+
+    --fonte-padrao: Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-family: var(--fonte-padrao);
+    background-image: url(../image/wallpaper001.jpg);
+}
+
+div.quadrado {
+    display: inline-block;
+    border: 2px solid 10px;
+    border-radius: 10px;
+    background-color: lightgray;
+    width: 300px;
+    height: 300px;
+}
+
+div#q1 {
+    background-color: skyblue;
+}
+
+div#q2 {
+    background-image: linear-gradient(to bottom, yellow, red);
+}
+
+div#q3 {
+    background-image: url(../image/pattern001.png);
+}
