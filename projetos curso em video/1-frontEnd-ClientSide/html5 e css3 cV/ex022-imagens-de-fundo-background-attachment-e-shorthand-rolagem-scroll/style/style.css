@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor0: white;
+    --cor1: black;
+
+    --fonte-padrao: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 99vh;
+    font-family: var(--fonte-padrao);
+    /* 
+    shortgand - background:
+    color > image > position > repeat > [size"ainda ñ funciona usar fora"] > attachment
+    */
+
+    background: black url(../image/wallpaper002.jpg) center center no-repeat fixed;
+    background-size: cover;
+    /* cover usa toda viewport */
+}
+
+
+  /* 
+    background-color: black;
+    background-image: url(../image/wallpaper002.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    cover não mostra a imagem toda mas ele ocupa toda a viewport.
+    Tipos de background-size: 
+    Tipos de background-size:auto;
+    background-size: contain;
+    background-size: cover;
+    background-size: 1000px;
+    background-size: 100% 100%;
+
+    */
+
+main {
+    background-color: white;
+    width: 400px;
+    padding: 10px;
+    margin: auto;
+    border:  1px solid darkblue;
+    border-radius: 15px;
+}
+
