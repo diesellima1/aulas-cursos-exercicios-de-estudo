@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor0: white;
+    --cor1: black;
+
+    --fonte-padrao: Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-family: var(--fonte-padrao);
+    height: 98vh;
+    border: 1px dashed black;
+    background-image: url(https://github.com/gustavoguanabara/gustavoguanabara.github.io/blob/master/images/mascote-javascript.png?raw=true);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* 
+    Psition: primeiro vem a coluna e depois a linha 
+    colunas: right center left. 
+    linhas: top center bottom.
+    */
+}
