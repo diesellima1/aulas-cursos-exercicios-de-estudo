@@ -14,6 +14,8 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative; /* para fixar o th */
+            margin: auto;
         }
 
         td, th {
@@ -21,11 +23,40 @@
             padding: 10px;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         thead, tfoot {
             background-color: grey;
             color: white;
         }
 
+        thead > tr > th { 
+            position: sticky;
+            top: -1px;
+            background-color: grey;
+        }
+
+        /* Zebra par e ímpar ou pulando linha */
+        tbody > tr:nth-child(odd) { /* 2n-1 */
+            background-color: rgb(248, 249, 250);
+                /* ZEBRAS ímpar (cor 1)*/
+        }
+
+        tbody > tr:nth-child(even) { /* 2n */
+            background-color: rgb(234, 236, 240);
+                /* ZEBRAS par (cor 2)*/
+        }
+    /*
+        tbody > tr:nth-child(2n) { /* pulando 2 linhas /
+            background-color: rgba(211, 211, 211, 0.35);
+                /* ZEBRAS par fundos brancos /
+        }
+    */
         td.num {
             text-align: right;
         }
@@ -36,6 +67,7 @@
     <!-- 
         ANATOMIA PARA TABELAS GRANDES:
         TABLE
+            caption:descrição superior (opcional)
             THEAD
                 [tr, td, th]
             TBODY
@@ -44,10 +76,12 @@
                 [tr, td, th,]
      -->
      <table>
+        <caption>Caption é a legenda da tabela que aparce na parte superior <br> "População das unidades federeativas"</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+                <!-- scope="col" escopo de coluna -->
         </thead>
         <tbody>
             <tr>
@@ -162,7 +196,8 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
+                <!-- scope="row" é o escopo de linha "fileira" -->
                 <td class="num"><strong>+ de 210.147.125</strong></td>
             </tr>
         </tfoot>
