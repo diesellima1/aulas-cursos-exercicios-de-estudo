@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor0: white;
+    --cor00: black;
+
+    --font-padrao: Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-family: var(--font-padrao)
+}
+
+table {
+    border-collapse: collapse;
+    margin: auto;
+}
+
+caption {
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 10px;    
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+}
