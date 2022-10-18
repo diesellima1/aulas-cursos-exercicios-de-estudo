@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes interno</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela {
+            width: 95vh;
+            height: 400px;
+            border: 2px solid black;
+            display: block;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quae sunt blanditiis fuga velit sint labore laudantium ut optio autem quos quisquam magnam fugit consequuntur facilis, alias obcaecati cumque. Unde!
+    Officia culpa repellat ullam atque nulla qui quis accusamus minus aut suscipit dignissimos corrupti ratione veritatis repudiandae, iure voluptatibus esse provident est dolores inventore nemo quod dolore explicabo soluta! Magni!</p>
+
+    <ul>
+        <li><a href="paginas-extras/testepag001.html" target="frame" rel="noopener noreferrer">Primeira página</a></li>
+        <li><a href="paginas-extras/pag-002.html" target="frame" rel="noopener noreferrer">Seguanda página</a></li>
+        <li><a href="paginas-extras/pag-003.html" target="frame" rel="noopener noreferrer">Terceire página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, natus ipsam non nisi corporis voluptatem repellendus, illo illum facilis nihil temporibus labore qui? Illo enim harum veniam recusandae amet dolores.
+    Ratione eaque dolore ut! Incidunt facilis sapiente explicabo, ullam similique ipsa natus dolorem commodi esse nisi. Amet sapiente pariatur quibusdam, dolores, consectetur atque distinctio qui excepturi architecto saepe iure itaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia beatae sint quisquam. Vero debitis neque hic quia autem sapiente facilis, dolore, ullam dolores tempore omnis repellat. Exercitationem distinctio impedit voluptas!</p>
+
+    <iframe id="tela" name="frame" src="" frameborder="1"><p>Infelizmente seu navegador não é compatível com isso.</p></iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore cum consequatur architecto minus explicabo, dolorem, consectetur illum cupiditate aspernatur reprehenderit, nam animi in dolores accusamus assumenda corporis necessitatibus beatae repellat!
+    Odio voluptate laborum sapiente pariatur? Illo ea alias hic aspernatur quisquam modi perferendis odit, non, sed asperiores id reiciendis? Alias dignissimos ipsum, perspiciatis nostrum nulla harum magnam repellendus tempora sapiente.</p>
+</body>
+</html>
+
+<!-- 
+    usa a tag name para abrir dentro de um frame pode renomear com qualquer nome 
+    depois no link é só substituir"_blank" com o nome do name dentro do  target=''
+ -->
