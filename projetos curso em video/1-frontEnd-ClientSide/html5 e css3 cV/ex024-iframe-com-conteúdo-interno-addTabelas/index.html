@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframe local</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe {
+            width: 500px;
+            display: block; /* convertendo de linha para bloco */
+            margin: auto;   /* centralizando */
+        }
+
+        .left {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste com iframe local</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis unde quia iure nobis quas corporis laudantium in amet asperiores, doloremque eligendi hic soluta molestiae adipisci, optio consequatur aut ipsum aspernatur. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur doloribus, temporibus perspiciatis distinctio dignissimos eum qui aliquid minus modi vel, possimus et dolores fugiat quod veritatis voluptates? Omnis, voluptatum nulla.</p>
+    <!-- IFRAME EXTERNO: -->
+    <iframe src="https://gustavoguanabara.github.io" frameborder="0">não compativel [link]</iframe>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis rerum deleniti nisi ad corporis sequi dignissimos ipsam vero modi accusamus, doloremque, fugit labore ex commodi rem qui dolorum! Hic, reiciendis.</p>
+
+    <!-- IFRAME INTERNO: -->
+    <!-- Tabela -->
+    <iframe src="tabelaResponsiva.html" frameborder="0" height="500px" width="500px"></iframe>
+    <!-- página -->
+    <iframe class="left" src="testepag001.html" frameborder="0">não compativel[link]</iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis reiciendis repellendus sapiente consequatur officiis praesentium officia assumenda minima sed fuga quod non voluptatem vitae magnam et, amet, blanditiis architecto id.
+    Rerum ipsum iure eos repellat et dignissimos dicta voluptatem, at tempora similique labore, fugit officiis possimus numquam reiciendis. Exercitationem totam beatae quo aperiam, a recusandae debitis aliquam quaerat alias corporis.</p>
+
+    <!-- para tabelas a melhor opcão é div/container/overflow -->
+</body>
+</html>
