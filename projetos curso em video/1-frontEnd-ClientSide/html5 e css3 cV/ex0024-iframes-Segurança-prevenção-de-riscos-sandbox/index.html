@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes mais seguros </title>
+</head>
+<body>
+    <h1>Meu site principal</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis id, ducimus dolor fugit optio earum modi voluptatem veniam fugiat nesciunt iste sequi illo doloribus quis. Esse illo ex facilis beatae?
+    A animi exercitationem, vel laborum maiores culpa eaque ab quaerat consectetur tenetur facere doloremque! Quidem nostrum, aperiam consequatur accusamus ex delectus id, quisquam cum eius sint obcaecati ullam, itaque vitae.
+    Perferendis quaerat nemo eum modi, unde corrupti debitis accusantium dolores dicta incidunt asperiores ullam quos earum a. Quo asperiores accusantium error, ipsam perferendis consequuntur dolor explicabo laboriosam quasi a quidem!</p>
+    <!-- sandbox bloqueia no maximao todos os acesso de outros sites que tentam fazer dentro do iframe 
+    segurança referrerpolicy="no-referrer" impede que sites coletem dados -->
+    
+    Não Permitido <br>
+    <iframe src="formulario.html" sandbox="sandbox" referrerpolicy="no-referrer" frameborder="1">seu navegador não é compatível com isso.</iframe>
+    
+    <br> Permitido da mesma origem para rodar o formúlario <br>
+    <iframe src="formulario.html" sandbox="allow-same-origin allow-forms allow-scripts" referrerpolicy="no-referrer" frameborder="1">seu navegador não é compatível com isso.</iframe>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas magnam quod aspernatur cupiditate, sapiente illo quidem quam. Eos, voluptatum dolore eveniet similique, eligendi ducimus in amet aliquam voluptatibus id hic?
+    Suscipit ipsa voluptatem ex odit labore optio iusto, itaque dolor voluptates eveniet officia magni! Reiciendis recusandae ipsum tempore. Ducimus vero velit distinctio quaerat minima quis illo inventore assumenda exercitationem debitis.
+    Fugit perferendis, illum quod voluptates quia expedita ad assumenda, quam provident delectus neque magni esse officiis, debitis saepe in? Itaque repellendus cupiditate aliquid perspiciatis nemo quas possimus cumque voluptatibus expedita.</p>
+</body>
+</html>
