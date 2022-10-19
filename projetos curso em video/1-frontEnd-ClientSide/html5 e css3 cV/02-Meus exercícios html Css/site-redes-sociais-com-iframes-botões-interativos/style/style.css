@@ -13,13 +13,13 @@
 }
 
 html, body {
-    height: 100vh;
-    width: 100vh;
+    height: 100vh;   /* vh */
+    width: 100vw;    /* vw */
     background-color: black;
 }
 
 body {
-    background:url(../image/fundo-madeira.jpg) no-repeat top center;/* shorthand background */
+    background: url(../image/fundo-madeira.jpg) no-repeat top center; /* shorthand background */
     background-size: cover; /* preencher a tela inteira */
     background-attachment: fixed; /* sem rolagem */
 }
@@ -39,6 +39,33 @@ section#telefone {
 
     height: 627px;
     width: 311px;
-    background:url(../image/frame-iphone.png) no-repeat;
+    background: url(../image/frame-iphone.png) no-repeat;
     /* foi posta a cor azul no celular e o tamanho  da imagem foi visto no gimp */
+}
+
+iframe#tela {
+    position: relative;
+    top: 80px;
+    left: 22px;
+    width: 269px;
+    height: 471px;
+}
+
+section#redes-sociais {
+    text-align: right;
+}
+
+section#redes-sociais img {
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.401);
+    box-sizing: border-box; /* faz a borta se unir com o objeto */
+}
+
+section#redes-sociais img:hover {
+    border: 2px solid rgba(255, 255, 255, 0.637);
+    transform: translate(-3px, -3px); /* -3 para esquerda e -3 para cima  */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.623);   /* sombra para representar movimento */
+    transition: transform 0.3s, border 1s; /* suavizando os botões com time ligando a bordas como uma luz*/
 }
