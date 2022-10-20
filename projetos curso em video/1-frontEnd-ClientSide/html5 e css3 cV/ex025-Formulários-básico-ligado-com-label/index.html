@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <form action="SCRIPT-cadastro.php" autocomplete="off"> 
+        <p><label for="inome">Nome:</label> <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome</label>: <input type="text" name="sobrenome" id="isobrenome"></p>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
+
+<!-- Todo formulário tem que estar dentro da tag <form> 
+    botão para enviar input:submit
+    autocomplete="off">  desliga a caixa de texto sugestiva por padrão ela vem ligada 
+    action= SCRIPT-cadastro.php : link para o scrip que for montado 
+    label criar uma relação entre os objetos ou seja é uma etiqueta para ligar os itens uns com os outros ex: nome e caixa identificados com label= quando clicar na palavra ele seleciona acaixa.
+    diferença de name e id: 
+    name: mais útil para html e php
+    id: mais útil para javascript e label
+    <label for=""></label> "label for: para quem?"
+-->
