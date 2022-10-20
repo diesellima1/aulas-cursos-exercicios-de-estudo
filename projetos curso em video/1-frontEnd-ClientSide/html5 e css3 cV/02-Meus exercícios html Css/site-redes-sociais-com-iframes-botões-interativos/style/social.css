@@ -34,13 +34,14 @@ a {
 a:hover { /* fazer o botão trocar de cor */
     background-color: red;
     color: lightgrey;
+     border: 1px solid white;
 }
 
 a.github {
     display: block; /* transformando inline em block */
-    background-color: black;
+    background-color: rgb(40, 42, 54);
     color: rgb(9, 107, 221);
-    padding: 20px;
+    padding: 25px;
     text-align: center;
     font-weight: bolder; /* coloca em negrito extra forte */
     text-decoration: none; /* remove o sublinhado do link */
@@ -48,8 +49,9 @@ a.github {
 }
 
 .github:hover { /* fazer o botão trocar de cor */
-    background-color: black;
+    background-color: rgb(40, 42, 54);
     color: white;
+    border: 1px solid white;
 }
 
 a.insta {
@@ -66,6 +68,7 @@ a.insta {
 .insta:hover { /* fazer o botão trocar de cor */
     background-color: rgb(232, 50, 126);
     color: rgba(255, 255, 255, 0.664);
+     border: 1px solid white;
 }
 
 a.twitter {
@@ -82,6 +85,7 @@ a.twitter {
 .twitter:hover { /* fazer o botão trocar de cor */
     background-color: rgb(1, 156, 233);
     color: rgba(255, 255, 255, 0.664);
+     border: 1px solid white;
 }
 
 a.facebook {
@@ -97,5 +101,6 @@ a.facebook {
 
 .facebook:hover { /* fazer o botão trocar de cor */
     background-color: rgb(1, 109, 233);
-    color: lightblue
+    color: lightblue;
+     border: 1px solid white;
 }
