@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Select datalist e textarea</title>
+    <style>
+        * {
+            padding: 3px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulário Select, datalist e textarea</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <div class="estados">Estado</div>
+            <select name="estado" id="iest">
+                
+                <option value="" selected>---Escolha---</option>
+                <optgroup label="Região Sudeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+
+                <optgroup label="Região Nordeste">
+                    <option value="Ma">Maranhão</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                </optgroup>
+
+            </select>
+        <div class="buttons">
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+        <div class="profs">
+            <label for="iprof">Profissão: </label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option value="ADM">Administrador</option>
+                <option value="Conta">contabilista</option>
+                <option value="Dev">desenvolvedor</option>
+                <option value="Prof">Professor</option>
+            </datalist>
+            <div class="mens">
+                <label for="imsg">Mensagem: </label><br>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Digite sua msg..."></textarea>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
+
+<!-- 
+    todo formulario que usa get tem um limite de 3k bytes 
+    para usar textarea tem que ser o method="post"
+    textarea não esta nos inputs tem que digitar o nome dela 
+    textarea não tem limite ela é infinita por padrão 
+    selected é uma pré definição que vai aparecer por primeiro
+
+ -->
+
+<!--
+    input-file tem que usar o mmethod="post" 
+    input-image é escolhido pelo desenvolvedor e não pelo visitante 
+    input color por padrão é preto
+    input renge por padrão vai de 0 a 100 
+    min="1" max="5" limita de 1 a 5 
+    value="" modifica os valores padrões da barra do range 
+    -->
+
+<!-- todo botão de radio tem que ter o mesmo name e o checked um por vez pois els sempre marca o últimno -->
+
+<!--<fieldset> cria uma caixa em volta do mesmo grupo de dados 
+            <legend> criam uma legenda referente aos dados de mesmo gupo
+    
+    estudar mias sobre expressões regulares apneas para fins didaticos pois essa validação é feita com javascript  
+    pattern="^[0-9]{4}-[0-9]{4}$" required>
+    esse código limita os números de telefone digitados 
+ -->
+
+<!-- 
+    min="0" de uma caixa númerica  parece o minlenght mas para números 
+    max="10" máximo de uma caixa númerica para este caso é 10 parece o maxlenght mas para números 
+    step="0.5" passo de quanto em quanto dever mudar nesse caso a cada meio "aceita números quebrados de 5 em 5 se precisar pode usar 0.1 para isr de deceimo em decimos contando 1 por 1 quebrado" 
+    valeu="" ele substitui o placeholder e fica pre-preenchido
+ -->
+
+<!--
+reqired = campo obrigatório
+minlength="5" = mínimi 5/8 Caracteres
+maxlength="15" = máximo 15/20 Caracteres
+size="10" mostra 8/10 Caracteres se precisar de mais ele rola para o lado
+placeholder = sugestão de preencimento 
+autocomplete="off" desliga a caixa de sugestão
+autocomplite dentro do input ajuda os navegadores a fazer sugestões de preenchimento 
+aurocomplite:current-password é usado para formularios de login correntes  -->
+
+<!-- 
+    Get:
+    já vem por padrão e mostra todos os dados coletados na url não tem diferençã de velocidade apenas usado conforme ocasião do momento e para dados simpes 
+
+    Post:
+    esconde os dados  no url mas pode ser visto no dev tools na aba network que significa rede
+    para ter dados mias seguros e criptografados temos que usar o https 
+ -->
+
+<!-- Todo formulário tem que estar dentro da tag <form> 
+    botão para enviar input:submit
+    autocomplete="off">  desliga a caixa de texto sugestiva por padrão ela vem ligada 
+    action= SCRIPT-cadastro.php : link para o scrip que for montado 
+    label criar uma relação entre os objetos ou seja é uma etiqueta para ligar os itens uns com os outros ex: nome e caixa identificados com label= quando clicar na palavra ele seleciona acaixa.
+    diferença de name e id: 
+    name: mais útil para html e php
+    id: mais útil para javascript e label
+    <label for=""></label> "label for: para quem?"
+    
+    Todo formulário tem que estar dentro da tag <form> 
+    botão para enviar input:submit
+    autocomplete="off">  desliga a caixa de texto sugestiva por padrão ela vem ligada 
+    action= SCRIPT-cadastro.php : link para o scrip que for montado 
+    label criar uma relação entre os objetos ou seja é uma etiqueta para ligar os itens uns com os outros ex: nome e caixa identificados com label= quando clicar na palavra ele seleciona acaixa.
+    diferença de name e id: 
+    name: mais útil para html e php
+    id: mais útil para javascript e label
+    <label for=""></label> "label for: para quem?"
+-->
