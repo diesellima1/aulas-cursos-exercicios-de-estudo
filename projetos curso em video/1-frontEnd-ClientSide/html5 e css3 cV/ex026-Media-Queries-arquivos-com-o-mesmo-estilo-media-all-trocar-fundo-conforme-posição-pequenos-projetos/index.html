@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="styles/style.css" media="all">
+    <link rel="stylesheet" href="styles/retrato.css" media="screen and (orientation: portrait)">
+    <link rel="stylesheet" href="styles/paisagem.css" media="screen and (orientation: landscape)"> -->
+
+    
+    <link rel="stylesheet" href="style/style.css">
+    <title>Media Query</title>
+
+    <style>
+        /* declarações gerais */
+
+        /* configurações gerais (all) */
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        html, body {
+            width: 100vw;
+            /* largura da tela */
+            height: 100vh;
+            /* altura da tela */
+            background-color: #233eff;
+            /* cor de fundo padrão */
+            background-color: contain;
+            /* ajustando o plano de fundo melhor qeu o cover contain= "conter" */
+            background-repeat: no-repeat;
+        }
+
+        h1 {
+            color: white;
+            text-shadow: 2px 2px 0px #1526a7;
+        }
+
+        /* declarações retrato criar regra*/
+        @media screen and (orientation: portrait) {
+            /* Aparelho em pé "Retrato" (porttrait) */
+
+            body {
+                /* background-color: darkgreen; */
+                background-image: url(image/cev-portrait.jpg);
+                /* mudando o plano de  fundo conforme a posição da tela  */
+                background-position: center bottom;
+                /* alinhado no centro bottom */
+            }
+            
+        }
+
+
+        /* declarações paisagem criar regra*/
+        @media screen and (orientation: landscape) {
+            /* Aparelho deitado "Paisagem"(landscape) */
+
+            body {
+               
+                background-image: url(image/cev-landscape.jpg);
+                /* mudando o plano de  fundo conforme a posição da tela  */
+                background-position: left bottom;
+                /* alinhado na esquerda em baixo para cobrir as falhas de baixo */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Mude a orientação do seu dispositivo</h1>
+</body>
+</html>
+
+
+<!--Todos os projetos tem que ter media query 
+quando usamos meida podemos informar as media types junto com as medias features (tipos e caractéristica)
+Media Features são escritas dentro de parenteses se tiver 3 medias features deve usar 3 1par de parentese para cada uma. 
+ <link rel="stylesheet" href="style/retrato.css" media="screen and (orientation: portrait)"> 
+ orientation: portrait mostra telas em modo retrato
+    <link rel="stylesheet" href="style/paisagem.css" media="screen and (orientation: landscape)">
+    orientation: landscape mostra as telas em modo paisagem
+-->

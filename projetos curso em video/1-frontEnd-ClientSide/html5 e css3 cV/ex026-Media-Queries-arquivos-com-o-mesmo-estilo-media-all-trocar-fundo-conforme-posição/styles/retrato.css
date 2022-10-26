@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+/* Aparelho em pé "Retrato" (porttrait) */
+
+body {
+    /* background-color: darkgreen; */
+    background-image: url(../image/cev-portrait.jpg);
+    /* mudando o plano de  fundo conforme a posição da tela  */
+    background-position: center bottom;
+    /* alinhado no centro bottom */
+}

@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+/* Aparelho deitado "Paisagem"(landscape) */
+
+body {
+    /* background-color: red; */
+    background-image: url(../image/cev-landscape.jpg);
+    /* mudando o plano de  fundo conforme a posição da tela  */
+    background-position: left bottom;
+    /* alinhado na esquerda em baixo para cobrir as falhas de baixo */
+}

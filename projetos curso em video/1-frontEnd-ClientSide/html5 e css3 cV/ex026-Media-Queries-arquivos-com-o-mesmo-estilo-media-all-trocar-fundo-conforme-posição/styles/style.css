@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+/* configurações gerais (all) */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    width: 100vw;
+    /* largura da tela */
+    height: 100vh;
+    /* altura da tela */
+    background-color: #233eff;
+    /* cor de fundo padrão */
+    background-color: contain;
+    /* ajustando o plano de fundo melhor qeu o cover contain= "conter" */
+    background-repeat: no-repeat;
+}
+
+h1 {
+    color: white;
+    text-shadow: 2px 2px 0px #1526a7;
+}
