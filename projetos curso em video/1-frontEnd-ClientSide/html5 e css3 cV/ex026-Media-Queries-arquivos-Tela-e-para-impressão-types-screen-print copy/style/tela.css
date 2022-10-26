@@ -12,6 +12,11 @@ html {
     font-size: 1em;
 }
 
+menu {
+    display: none;
+    /* não mostrar o menu */
+}
+
 header {
     background-color: rgb(158, 158, 158);
 }
@@ -28,10 +33,6 @@ menu ul {
 
 menu li {
     background-color: rgb(75, 75, 75);
-    color: white;
-    display: inline-block;
-    /* para ficar um do lado do outro */
-    padding: 10px;
 }
 
 article {

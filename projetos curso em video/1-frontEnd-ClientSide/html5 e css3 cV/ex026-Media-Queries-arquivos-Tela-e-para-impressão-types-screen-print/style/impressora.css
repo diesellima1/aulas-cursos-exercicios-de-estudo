@@ -9,7 +9,22 @@
 
 html {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 1.5em;
+    font-size: 1em;
     line-height: 1,5em;
+    /* espaço entre as letras "altura" */
 }
 
+menu {
+    display: none;
+    /* não mostrar o menu */
+}
+
+article {
+    width: 100%;
+    /* na impressora pode ocupar 100% da largura */
+}
+
+article::after {
+    content: "Esse artigo foi impresso através do site www.cursoemvideo.com";
+    /* depois do artido exibir essa menssagem */
+}
