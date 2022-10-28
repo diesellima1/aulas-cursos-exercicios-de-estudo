@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor0: white;
+    --cor00: black;
+}
+
+html, body {
+    background-color: lightgrey ;
+}
+
+header {
+    background-color: rgb(148, 148, 148);
+    
+    /* tudo que estiver dentrso co header sera sinza por padrão */
+}
+
+header > h1 {
+    padding: 10px;
+    text-align: center;
+    /* h1 dentro do reader sera centralizados com espaço de 10px */
+}
+
+i#burguer{ /* ïcone do id burguer que fica em cima do menu; hover abaixo */
+    background-color: rgb(48, 48, 48);
+    /* cor da caixa que forma o botão */
+    color: var(--cor0);
+    /* cor das listras interna  */
+    display: block;
+    /* transforma para bloco e ocupa a linha toda */
+    text-align: center;
+    /* alinhando o botão no centro */
+    padding: 10px;
+    /* espaço interno dentro do botão */
+    cursor: pointer;
+    /* muda o ícone do cursor quando passa por cima do botão */
+}
+
+i#burguer:hover {
+    background-color: var(--cor0);
+}
+
+
+menu {  /* esse pertence ao burguer */
+    display: none;
+    /* Esconde a lista de menus e para fazer elas aparecer tem que usar javaScrip ou outra linguagem de programação " podemos transformar em block ou esconder usando o camando none"*/
+}
+
+menu > ul {
+    list-style: none;
+    /* esconde a bolinha padrão das listas */
+}
+
+menu > ul > li > a {
+    display: block;
+    padding: 10px;
+    text-decoration: none; /* esconder a decoreção do link  */
+    text-align: center;
+    background-color: rgb(87, 87, 87);
+    color: var(--cor0);
+    border: 2px solid var(--cor00);
+    /* contornando as palavras opções e transformando e botão  */
+}
+
+menu > ul > li > a:hover {
+    background-color: gray;
+    /* cor secundaria do botão  */
+}
+
+main {
+    width:  90vw;
+    /* 90% da largura da tela viewport */
+    background-color: var(--cor0);
+    /* cor de fundo para o conteúdo */
+    margin: auto;
+    /* centralizar todo o bloco */
+    margin-top: 10px;
+    /* descolar do menu  */
+    padding: 10px;
+    /* descolar da main "bloco" */
+    border-radius: 10px;
+    /* arendodar os cantos da main "bloco" */
+}
+
+article {
+    text-align: justify;
+    /* justificar os parágrafos */
+    margin-bottom: 10px;
+    /* na última linha afastar 10px na parte de baixo da main "desafogando" */
+}
+
+
+article > p {
+    text-align: justify;
+    /* justificar os parágrafos  */
+    margin-bottom: 20px;
+    /* desafogar os paragrafos criando espaço entre eles  */
+    text-indent: 20px;
+    /* No texto identifica um paragrafo  "recolhe 20px para dentro cada paragrafo dentro do article" */
+}

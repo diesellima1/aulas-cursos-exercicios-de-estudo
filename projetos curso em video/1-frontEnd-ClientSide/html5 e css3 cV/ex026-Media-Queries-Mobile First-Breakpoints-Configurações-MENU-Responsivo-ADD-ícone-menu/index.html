@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> <!-- css do google para ícones -->
+    <title>Media Query</title>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <i id="burguer" span class="material-symbols-outlined" onclick="clickMenu()"> <!-- chamada javaScrip para abrir o menu burguer -->
+            menu  <!-- aqui troca o modelo do ícone ex: menu_Book -->
+            </i>
+        <menu id="menuItens"> <!-- pertence ao javaScript -->
+            <ul>
+                <li class="item1"><a href="#">Opcão1</a></li>
+                <li class="item2"><a href="#">Opcão2</a></li>
+                <li class="item3"><a href="#">Opcão3</a></li>
+                <li class="item4"><a href="#">Opcão4</a></li>
+                <li class="item5"><a href="#">Opcão5</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando Media  Queries</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam illo tenetur quis sapiente amet, quas debitis repellat autem beatae explicabo cumque, officia delectus voluptatibus obcaecati vero laudantium, possimus voluptatum sed?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae consequatur blanditiis vero quis, consequuntur saepe eius libero quidem a sapiente quae fugit provident nesciunt, quos similique, modi ullam sed expedita!</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, aliquid obcaecati sint ipsum error cum ratione nemo doloremque id deleniti magnam numquam temporibus iste tempore molestiae quisquam deserunt repellat unde.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, accusamus dignissimos blanditiis vel dolorem sapiente natus quibusdam perspiciatis nihil, dolorum adipisci nam optio tempora itaque aut corporis cumque quaerat nesciunt! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum sit nisi cumque in aliquid, neque nostrum officiis excepturi ratione quo repellat animi ea, culpa, aperiam cupiditate dolore exercitationem inventore dolorem.
+            Corporis, quos! Totam unde ex veritatis consequatur tempora neque sed eum nobis doloremque magnam? Nisi, culpa delectus aliquam eveniet quo enim beatae inventore quibusdam qui voluptas, ipsam sed, laboriosam velit.</p>
+        </article>
+    </main>
+
+    <!-- scrip de condição para abrir o menu burguer e fechar -->
+    <script>
+        function clickMenu() { //chamando a função dentro do html
+            if (menuItens.style.display == "block") { // Se os itens estiverem sendo exibidos..... "Visualizando"
+                menuItens.style.display = "none" // depois de clicar deve esconder "parar de mostrar"
+            } else { //se não for o caso acima deve....
+                menuItens.style.display = "block" // mostrar
+            }
+
+        }  
+    </script>
+
+    <!-- 
+        para fazer o menu burguer foi feito no 
+        html no css e javaScrip 
+        html:i id="burguer";
+        css:menu; i#burguer , i#burguer:hover 
+        javaScrip:onclick="clickMenu()"; <menu id="menuItens">
+
+            ícone:
+             <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />  "css do google para ícones"
+            <i id="burguer" span class="material-symbols-outlined" onclick="clickMenu()">
+    -->
+</body>
+</html>
+
+
+
+
+
+
+
+
+<!-- i o google recomenda que seja de ícone e não itálico 
+    onclick="clickMenu("ligar com")
+    onclick é uma função padrão mas o clickMenu é  apenas um idenrificador pode dar qualquer nome para chamar a função dentro do scrip que 
+    usei traço para criar um id do menu e o javaScrip não aceitou "como se eu já não soubesse disso kkkkk " 
+-->
+
