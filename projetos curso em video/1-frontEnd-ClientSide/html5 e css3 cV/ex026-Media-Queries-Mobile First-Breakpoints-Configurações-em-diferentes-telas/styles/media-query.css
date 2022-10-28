@@ -25,7 +25,7 @@ Grandes telas: acima de 1200px
         }
 
         body {
-                /* background-image: url(../image/back-print.jpg); na impressora atualmente não imprime background  "desnecessário" */
+                background-image: url(../image/back-print.jpg); /* na impressora atualmente não imprime background  "desnecessário" */
         }
 
         main {
