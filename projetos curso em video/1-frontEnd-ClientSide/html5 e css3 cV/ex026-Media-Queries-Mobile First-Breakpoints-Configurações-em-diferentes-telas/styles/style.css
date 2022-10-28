@@ -1,0 +1,59 @@
+@charset "UTF-8";
+/* Versão Mobile First */
+*{
+margin: 0px;
+padding: 0px;
+font-family: Arial, Helvetica, sans-serif;
+box-sizing: border-box;
+/* incluir a borda no cálculo do tamanho */
+}
+
+:root {
+    --cor0: white;
+    --cor00: black;
+}
+
+html {
+    /* width: 100vw; */
+    /* 100% largura da tela */
+    height: 100vh;
+    /* 100% altura da tela */
+}
+
+body {
+    background: var(--cor00) url(../image/back-phone.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.842);
+    width: 90%;
+    /* 90% da largura da main */
+    margin: auto;
+    /* centralizado */
+    border-radius: 10px;
+    /* arrendodnado a borada */
+    padding: 10px;
+    /* espaço do conteúdo */
+}
+
+h1 {
+    text-align: center;
+    color: var(--cor0);
+    font-size: 2em;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.842);
+}
+
+img {
+    display: block;
+    margin: auto;
+    /* toda imagem vai mostrar em bloco e centralizado "padrão celular" */
+}
+img#phone  { display: block; }
+img#tablet { display: none; } 
+img#print  { display: none; } 
+img#pc     { display: none; } 
+img#tv     { display: none; } 
+/* mesma confg. pode fazer tudo na mesma linha formando um bloco, block alterna as imagens de Ícones usadas no documento "media-query.css" e none deixa elas permanentemente escondidas  */

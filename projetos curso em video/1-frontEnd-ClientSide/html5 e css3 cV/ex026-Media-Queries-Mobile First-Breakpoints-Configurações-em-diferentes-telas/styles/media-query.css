@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+/* Todas as demais mídias 
+pesquissar antes de iniciar o projeto na w3c
+
+Typical device Breakpoints
+--------------------------
+Pequenas Telas: até 600px
+Celular: de 600px até 768px
+Tablet:768px até 992px
+Desktop:992px até 1200px
+Grandes telas: acima de 1200px
+*/
+
+:root {
+    --cor0: white;
+    --cor00: black;
+}
+
+@media print {
+    /* DETALHE DIFERENCIADO Mobile first: para IMPRESSÃO em papel (documento físico) */
+        *{
+            font-family: 'Courier New', Courier, monospace;
+            /* monospace ideal para imprimir em documento físico */
+        }
+
+        body {
+                /* background-image: url(../image/back-print.jpg); na impressora atualmente não imprime background  "desnecessário" */
+        }
+
+        main {
+            width: 90vw;
+            /* 90% do papel */
+            border: 2px solid var(--cor00);
+            /* borda no conteúdo */
+        }
+
+        main h1 {
+            text-shadow: none;
+            color: var(--cor00);
+        }
+
+        main::after { /* depois do conteúdo */
+            content: "Essa impressão foi feita através do site www.cursoemvideo.com"; 
+            /* mensagem que vai somente para a impressão */
+            text-decoration: overline; 
+            /* linha em cima do texto "firefox não apareceu mas apareceu no Chrome"*/
+        }
+
+        img#phone  { display: none; }
+        img#tablet { display: none; } 
+        img#print  { display: block; } 
+        img#pc     { display: none; } 
+        img#tv     { display: none; } 
+        /* Ícones: ver:block; esconder:none; */
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {  
+    /* Desktop Mobile first-Typical device Breakpoints: adequando o site para telas maiores que 768px */
+        body {
+            background-image: url(../image/back-tablet.jpg);
+        }
+
+        img#phone  { display: none; }
+        img#tablet { display: block; } 
+        img#print  { display: none; } 
+        img#pc     { display: none; } 
+        img#tv     { display: none; } 
+        /* Ícones: ver:block; esconder:none; */
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {  
+    /* Desktop Mobile first-Typical device Breakpoints: adequando o site para telas maiores que 992px */
+        body {
+            background-image: url(../image/back-pc.jpg);
+        }
+
+        img#phone  { display: none; }
+        img#tablet { display: none; } 
+        img#print  { display: none; } 
+        img#pc     { display: block; } 
+        img#tv     { display: none; } 
+        /* Ícones: ver:block; esconder:none; */
+}
+
+@media screen and (min-width:1200px) {
+    /* GRANDES Telas Mobile first-Typical device Breakpoints: adequando o site para telas maiores que 1200px */
+        body {
+            background-image: url(../image/back-tv.jpg);
+        }
+
+        img#phone  { display: none; }
+        img#tablet { display: none; } 
+        img#print  { display: none; } 
+        img#pc     { display: none; } 
+        img#tv     { display: block; } 
+        /* Ícones: ver:block; esconder:none; */
+    }
