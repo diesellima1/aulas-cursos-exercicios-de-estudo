@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../ico/Brazil.ico" type="image/x-icon">
+    <title>Link para outras áreas do site</title>
+    <style>
+
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        html, body {
+            width: 100vw;
+            height: 100vh;
+            background-color: #658C0F;
+        }
+
+        header {
+            text-align: center;
+            margin-top: 80px;
+            padding: 5px;
+        }
+
+        header > h1 {
+            font-size: 3em;
+            text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.623);   
+            /* sombra para representar movimento 
+            1 valor: deslocamento da sombra na horizontal (+direita -esquerda); 2 valor: deslocamento da sombra na vertical (+ baixo - cima) 3valor desfocar a sombra (espalhar)*/        
+        }
+
+        h1:hover {
+            color: #593825;
+            text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.42);
+            cursor: copy;
+        }
+
+        p {
+            color: #593825;
+            font-size: 20px;
+            font-weight: bold;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.296); 
+        }
+
+
+        main {
+            text-align: center;
+            padding: 5px;
+            margin-top: 5px;
+        }
+
+        main > img {
+            height: 50vh;
+            border: 1px solid green;
+            border-radius: 10px;
+            cursor: no-drop;
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.272);
+        }
+
+        main > img:hover {
+            border-radius: 11px;
+        }
+
+        section {
+            padding: 15px ;
+        }
+
+        .container {  /* FLEX BOX */
+            height: 100%;
+            display: flex;
+            /* solução para colocar um bloco do lado do outro "criar uma div container" */
+            flex-direction: row;
+            /* direção em linha */
+            flex-wrap: wrap;
+            /* rola para a linha de baixo "quebra para a linha de baixo" */
+            justify-content: center;
+            /* justificar o conteúdo no centro */
+            align-items: center;
+
+
+        }
+
+        .icor {
+            display: block;
+            border-radius: 50%;
+            text-decoration: none;
+        }
+
+        .icor:hover {
+            background-color: #f29d354e;
+            border-radius: 50%;
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.272);
+        }
+
+        .icorq{
+            display: block;
+            border-radius: 50%;
+            text-decoration: none;       
+        }
+
+        .icorq:hover {
+            background-color: #f29d354e;
+            border-radius: 10%;
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.272);
+        }
+
+        footer {
+            text-align: center;
+            margin: 5px;
+        }
+
+        footer > a {
+            color: rgb(72, 72, 255);
+            text-decoration: none;
+        }
+
+        footer > a:hover {
+            color: blue;
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Verificado!</h1>
+        <p><abbr title="Mas Não Pode Comer">Hambúrguer Pronto</abbr></p>
+    </header>
+    <main>
+        <img src="../image/burguer-vegetariano.jpg" alt="foto de um Hambúrguer">
+        <section>
+            <div class="container">
+                <abbr title="Voltar"><a href="linkopcao5.html" rel="safe"><img class="icor" src="../image/voltar.png" alt="Voltar"></a></abbr>
+                <abbr title="Home"><a href="../index.html" target="safe" rel="safe"> <img class="icorq" src="../image/home.png" alt="home"> </a></abbr>
+                <abbr title="Avançar"><a href="../index.html" rel="safe"> <img class="icor" src="../image/avancar.png" alt="Avançar"></a></abbr>
+            </div>
+        </section>
+    </main>
+    <footer> <a href="https://github.com/diesellima1" target="_blank" rel="external">github.com/diesellima1</a></footer>
+</body>
+</html>

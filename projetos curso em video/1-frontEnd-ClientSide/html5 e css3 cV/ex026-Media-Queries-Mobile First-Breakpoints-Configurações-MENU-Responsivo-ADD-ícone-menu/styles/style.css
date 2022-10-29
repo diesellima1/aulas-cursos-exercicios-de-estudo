@@ -13,7 +13,12 @@
 }
 
 html, body {
+    width: 100vw;  /* preenche todo o fundo com a cor selecionada  */
+    height: 100vh; /* resolveu o problema da parte branca pegando na maim "descolando o body da main " */
     background-color: lightgrey ;
+    background-size: cover;
+    background-position: center center;
+    /*  */
 }
 
 header {
@@ -47,8 +52,8 @@ i#burguer:hover {
     background-color: var(--cor0);
 }
 
-
-menu {  /* esse pertence ao burguer */
+/* esse pertence ao burguer */
+menu { 
     display: none;
     /* Esconde a lista de menus e para fazer elas aparecer tem que usar javaScrip ou outra linguagem de programação " podemos transformar em block ou esconder usando o camando none"*/
 }
@@ -76,7 +81,9 @@ menu > ul > li > a:hover {
 
 main {
     width:  90vw;
-    /* 90% da largura da tela viewport */
+    /* 90% da largura da tela viewport "descolando das laterais"*/
+    max-width: 1000px;
+    /* limitando a main para formar parágrafos gigantes */
     background-color: var(--cor0);
     /* cor de fundo para o conteúdo */
     margin: auto;
@@ -105,3 +112,15 @@ article > p {
     text-indent: 20px;
     /* No texto identifica um paragrafo  "recolhe 20px para dentro cada paragrafo dentro do article" */
 }
+
+/* MOBILE  FIRST */
+img {
+        display: block;
+        margin: auto;
+        /* toda imagem vai mostrar em bloco e centralizado "padrão celular" */
+    }
+        img#phone  { display: block; }
+        img#tablet { display: none; } 
+        img#print  { display: none; } 
+        img#pc     { display: none; } 
+        img#tv     { display: none; } 
