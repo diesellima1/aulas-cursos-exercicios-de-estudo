@@ -66,7 +66,21 @@ Grandes telas: acima de 1200px
         img#print  { display: none; } 
         img#pc     { display: none; } 
         img#tv     { display: none; } 
-        /* Ícones: ver:block; esconder:none; */
+        i#burguer  { display: none; }
+        menu       { display: block; }
+        .item6     { display: inline-block; } 
+        .item6i    { display: none; }
+        /* Ícones: ver:block; esconder:none; inline-block mostrar na linha */
+
+        menu > ul > li {
+            display: inline-block;
+        }
+
+        menu > ul > li > a {border-radius: 5% 5%;}
+        menu > ul > li > a:hover {border-radius: 8% 8%;
+        /* botões do menu */
+        }
+       
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {  
@@ -79,8 +93,21 @@ Grandes telas: acima de 1200px
         img#tablet { display: none; } 
         img#print  { display: none; } 
         img#pc     { display: block; } 
-        img#tv     { display: none; } 
-        /* Ícones: ver:block; esconder:none; */
+        img#tv     { display: none; }
+        i#burguer  { display: none; }
+        menu       { display: block; }
+        .item6     { display: inline-block; } 
+        .item6i    { display: none; }
+        /* Ícones: ver:block; esconder:none; inline-block mostrar na linha */
+
+        menu > ul > li {
+            display: inline-block;
+        }
+
+        menu > ul > li > a {border-radius: 5% 5%;}
+        menu > ul > li > a:hover {border-radius: 8% 8%;
+        /* botões do menu */
+        }
 }
 
 @media screen and (min-width:1200px) {
@@ -94,5 +121,24 @@ Grandes telas: acima de 1200px
         img#print  { display: none; } 
         img#pc     { display: none; } 
         img#tv     { display: block; } 
-        /* Ícones: ver:block; esconder:none; */
+        i#burguer  { display: none; }
+        menu       { display: block; }
+        .item6     { display: inline-block; } 
+        .item6i    { display: none; }
+        /* Ícones: ver:block; esconder:none; inline-block mostrar na linha */
+
+        menu > ul > li {
+            display: inline-block;
+        }
+
+        ul {
+            text-align: center;
+            margin-left: -674px;
+            /* quando a tela ficar muito grande vai centralizar a lista de menu e fixar na lateral esquerda andando junto com o conteúdo */
+        }
+
+          menu > ul > li > a {border-radius: 5% 5%;}
+        menu > ul > li > a:hover {border-radius: 8% 8%;
+        /* botões do menu */
+        }
     }

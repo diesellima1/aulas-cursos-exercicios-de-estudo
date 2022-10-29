@@ -23,14 +23,26 @@ html, body {
 
 header {
     background-color: rgb(148, 148, 148);
-    
-    /* tudo que estiver dentrso co header sera sinza por padrão */
+    /* tudo que estiver dentrso do header sera cinza por padrão */
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.272);
+    /* sombra em baixo do cabeclalho */
 }
 
 header > h1 {
     padding: 10px;
+    text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.542);
+    /* sombra para parecer 3d */
     text-align: center;
     /* h1 dentro do reader sera centralizados com espaço de 10px */
+}
+
+h2 {
+    font-weight: bold;
+    /* fonte com "peso" em negrito */
+    color: #658C0F;
+    /* cor da letra */
+    text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.542);
+    /* sombra no texto */
 }
 
 i#burguer{ /* ïcone do id burguer que fica em cima do menu; hover abaixo */
@@ -63,25 +75,44 @@ menu > ul {
     /* esconde a bolinha padrão das listas */
 }
 
+    .item6i {
+    background-color: darkgray;
+}
+
 menu > ul > li > a {
     display: block;
     padding: 10px;
     text-decoration: none; /* esconder a decoreção do link  */
     text-align: center;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.465);
+    /* efeito 3d nas letras do menu  */
     background-color: rgb(87, 87, 87);
     color: var(--cor0);
-    border: 2px solid var(--cor00);
+    border: 2px solid rgba(0, 0, 0, 0.133);
     /* contornando as palavras opções e transformando e botão  */
+    box-sizing: border-box;
+    /* faz a borda se unir com o objeto e para de mecher os outros */
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.272);
+    /* efeito de 3d na nos botões do menu */
+
 }
 
 menu > ul > li > a:hover {
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.465);
     background-color: gray;
     /* cor secundaria do botão  */
+    border-radius: 8% 8%;
+    border: 2px solid rgba(255, 255, 255, 0.637);
+    transform: translate(-0px, -2px); /* -3 para esquerda e -3 para cima  */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.623);   /* sombra para representar movimento */
+    transition: transform 0.3s, border 1s; /* suavizando os botões com time ligando a bordas como uma luz*/
+
+   
 }
 
 main {
     width:  90vw;
-    /* 90% da largura da tela viewport "descolando das laterais"*/
+    /* 90% da largura da tela viewport quando a tela ficar pequena e "descolando das laterais"*/
     max-width: 1000px;
     /* limitando a main para formar parágrafos gigantes */
     background-color: var(--cor0);
@@ -94,6 +125,8 @@ main {
     /* descolar da main "bloco" */
     border-radius: 10px;
     /* arendodar os cantos da main "bloco" */
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.272);
+    /* dando dimenção de profundidade em volta da div main */
 }
 
 article {
@@ -119,8 +152,35 @@ img {
         margin: auto;
         /* toda imagem vai mostrar em bloco e centralizado "padrão celular" */
     }
-        img#phone  { display: block; }
+        img#phone  { display: block; 
+        }
         img#tablet { display: none; } 
         img#print  { display: none; } 
         img#pc     { display: none; } 
         img#tv     { display: none; } 
+        .item6     { display: none; }
+
+/* FAZER AS IMAGENS TREMER EFEITO SHAKE "agitar" */
+        img, h2:hover {
+            /* Inicia a animação de shake e faz a animação durar 0,5 segundos */
+            /* Start the shake animation and make the animation last for 0.5 seconds */
+            animation: shake 0.5s;
+          
+            /* Quando a animação terminar, comece novamente */
+            /* When the animation is finished, start again */
+            animation-iteration-count: infinite;
+          }
+          
+          @keyframes shake {
+            0% { transform: translate(1px, 1px) rotate(0deg); }
+            10% { transform: translate(-1px, -2px) rotate(-1deg); }
+            20% { transform: translate(-3px, 0px) rotate(1deg); }
+            30% { transform: translate(3px, 2px) rotate(0deg); }
+            40% { transform: translate(1px, -1px) rotate(1deg); }
+            50% { transform: translate(-1px, 2px) rotate(-1deg); }
+            60% { transform: translate(-3px, 1px) rotate(0deg); }
+            70% { transform: translate(3px, 1px) rotate(-1deg); }
+            80% { transform: translate(-1px, -1px) rotate(1deg); }
+            90% { transform: translate(1px, 2px) rotate(0deg); }
+            100% { transform: translate(1px, -2px) rotate(-1deg); }
+          }

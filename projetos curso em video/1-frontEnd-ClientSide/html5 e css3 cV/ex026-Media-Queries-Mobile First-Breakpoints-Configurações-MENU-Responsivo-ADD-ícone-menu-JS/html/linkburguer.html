@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/media-query.css">
     <link rel="shortcut icon" href="../ico/Brazil.ico" type="image/x-icon">
     <title>Link para outras áreas do site</title>
     <style>
@@ -13,10 +14,17 @@
             padding: 0px;
         }
 
+               /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  body {background-color: #658C0F;}
+}
+
         html, body {
             width: 100vw;
             height: 100vh;
-            background-color: #658C0F;
+            /* background-color: lightgrey ; algo estranho aki se ativar esse os outros não aparecem */
+            background-size: cover;
+            background-position: center center;
         }
 
         header {
@@ -53,6 +61,7 @@
         }
 
         main > img {
+            background-color: darkgrey;
             height: 50vh;
             border: 1px solid green;
             border-radius: 10px;
