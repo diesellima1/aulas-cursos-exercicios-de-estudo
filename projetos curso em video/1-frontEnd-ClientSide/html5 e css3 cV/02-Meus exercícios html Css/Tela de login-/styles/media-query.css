@@ -10,14 +10,16 @@ Grandes telas: acima de 1200px;
 */
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
-/* ---------------------------------------------------------------------------- */
+/* Tablet ---------------------------------------------------------------------------- */
     body {
         background-image: linear-gradient(to top, #49a09d, #5f2c82);
     }
 
     section#login {
         width: 80vw; /* width sempre vw "largura da viewport" */
+        height: 280px;
     }
+    
     
     /* comando para mudar de lado div1 */
     section#login > div#imagem {
@@ -31,6 +33,11 @@ Grandes telas: acima de 1200px;
         float: right; /* (formulario na direita) flutuar a direita as letras sairam de posição */
         width: 70%; /* com a largura as letras se ajustaram novamente */
     }
+
+    section#login > div#imagem {
+        border-radius: 20px 0px 0px 20px;
+        
+    }
     
 } /* cuidado para não escrever o código fora do bloco da um trabalho para encontrar o erro */
 /* ---------------------------------------------------------------------------- */
@@ -38,13 +45,14 @@ Grandes telas: acima de 1200px;
 
 
 @media screen and (min-width: 992px) {
-/* ---------------------------------------------------------------------------- */
+/* Desktop ---------------------------------------------------------------------------- */
     body {
         background-image: linear-gradient(to top, #5f2c82, #49a09d);
     }
 
     section#login {
         width: 950px;
+        height: 350px;
     }
     
     section#login > div#imagem {
@@ -63,7 +71,13 @@ Grandes telas: acima de 1200px;
     }
 
     div#formulario > p {
-        font-size: 1.2em;
+        font-size: 1.0em;
+        margin: 10px 0px;
+    }
+
+    section#login > div#imagem {
+        border-radius: 0px 20px 20px 0px;
+        
     }
     
 }

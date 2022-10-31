@@ -35,17 +35,18 @@ section#login {
     position: absolute; /* preparando para mover no meio da tela 50%x50% */
     top: 50%; /* a box desceu */
     left: 50%; /* a box foi para direita */
-    transform: translate(-50%, -50%); /* volta metade para cima e volta metade para esquerda centralizando  */
     background-color: var(--cor0);
     width: 250px;
-    height: 500px;
+    height: 515px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
 
+    transform: translate(-50%, -50%); /* volta metade para cima e volta metade para esquerda centralizando  */
     /* ANIMAÇÃO DE EFEITO SUAVE  */
     transition: width 0.3s, height 0.3s;
     /* SUAVISAR A VELOCIDADE DO EFEITO */
     transition-timing-function: ease;
+    /* OBS: efeitos e transições sempre na última linha */
 
 }
 
@@ -55,7 +56,7 @@ section#login > div#imagem {
     background-size: cover; /* preencher o espaço com a foto  */
     background-position: left bottom; /* ajustar o que vai aparecer da foto */
     border-radius: 20px 20px 0px 0px;
-    height: 250px;
+    height: 170px;
 }
 
 section#login > div#formulario {
@@ -67,8 +68,88 @@ section#login > div#formulario {
 div#formulario > h1 {
     text-align: center; /* centralizndo o h1 */
     margin-bottom: 10px; /* separando o h1 das letras de baixo */
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.450); /* sombra no texto h1 */
 }
+
 
 div#formulario > p {
     font-size: 0.8em;
+    padding: 5px;
+}
+
+form > div.campo {
+    background-color: var(--lilasc82);
+    /* border: 2px solid var(--lilasc82); *Erro */
+    width: 100%; /* largura total da div login e senha */
+    height: 48px; /* altura total da div login e senha */
+    border-radius: 5px; /* arrendando a div ligin e senha */
+    margin: 5px, 0px; /* margin de cima e de baixo com 5px e direita e esquerda com 0px */
+}
+
+/* div.campo > label {
+    display: none;
+} *remover a escrita não funcionou  */
+
+ #ils { /* ícone login e senha (ils)*/
+    color: var(--cor0);
+    font-size: 1.6em;
+    /* width: 40px;
+    padding: 5px;    *Erro */
+}
+
+div.campo > input {
+    background-color: #94cfcd;
+    width:calc(100% -44px);                                     /*  CSS CÁLCULO E ERROS */
+   /* height: 100%; */
+    /*  border: 0px;  
+    padding: 4px; *Erro */
+    border-radius: 8px;
+    transform: translate(-10);         /* puxando para cima sempre na últoma linha por motivos de compatibilidade com navegadores */
+}
+
+div.campo > input:focus-within {                          /* focus deixar a caixa bra */
+    background-color: var(--cor0);
+    border: none;
+}
+
+#submit { /* botão Entrar (face-01) */
+    display: block; /* posicionado o botão em uma linha só */
+    font-size: 1em; /* letra do tamanho padrão */
+    width: 100%; /* 100% do contonainer e não 100vw é o total da tela porcento é do container */
+    height: 40px; /* altura do botão Entrar  */
+    margin-top: 5px; 
+    background-color: var(--verde09d); /* cor do botão Entrar */
+    color: var(--cor0); /* cor da letra do botão Entrar */
+    border-radius: 5px; /* arredondando as bordas do botão Entrar */
+    cursor: pointer; /* mouse trocar para a mãozinha */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
+
+}
+
+#submit:hover { /* botão Entrar face-02 */ 
+    background-color: #2d6967; /* mesma cor do primeiro com tom mais escuro */
+}
+
+a.botao { /* botão do esqueci a senha (face-01) */
+    display: block;     /* transformando para bloco para ficar só em uma linha  */ 
+    text-align: center;     /* alinhando o texto */
+    font-size: 1em;     /* paddreao de 16px */ 
+    width: 100%;     /* largura total da box */
+    height: 40px;     /* altura total da box */
+    padding-top: 5px;     /* descolando o botão da parte superior interna */
+    margin-top: 5px;     /* separar um botão do outro */
+    background-color: var(--cor0); /* cor do botão */
+    color: #2d6462;     /* cor da letra do botão */
+    border: 1px solid #49a09d;     /* cor da borda */
+    border-radius: 5px;     /* arredondando a borda */
+    text-decoration: none;     /* link sem a linha sublinhada */
+}
+
+a.botao:hover { /* botão do esqueci a senha (face-01) */
+    background-color: #6cd3cf;
+}
+
+#i {     /* ícone do botão esqueci a senha */
+    font-size: 1.8em;
+    color: gray;
 }
