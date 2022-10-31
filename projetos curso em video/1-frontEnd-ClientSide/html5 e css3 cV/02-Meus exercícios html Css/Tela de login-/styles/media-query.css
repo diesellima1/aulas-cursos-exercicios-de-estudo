@@ -1,0 +1,70 @@
+@charset "UTF-8";
+ 
+/* Typical Device Breakpints
+-----------------------------
+Pequenas telas: até 600px
+celular: de 600px até 768px;
+Tablet: 768px até 992px;
+Desktop: 992px até 1200px;
+Grandes telas: acima de 1200px;
+*/
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+/* ---------------------------------------------------------------------------- */
+    body {
+        background-image: linear-gradient(to top, #49a09d, #5f2c82);
+    }
+
+    section#login {
+        width: 80vw; /* width sempre vw "largura da viewport" */
+    }
+    
+    /* comando para mudar de lado div1 */
+    section#login > div#imagem {
+        float: left; /*(imagem a direita) flutuar a esquerda a imagem sumio porque presica de uma largura */
+        width: 30%; /* 30% da div "box" */
+        height: 100%; /* 100% da dic "box" */
+    }
+    
+    /* comando para mudar de lado div2 */
+    section#login > div#formulario {
+        float: right; /* (formulario na direita) flutuar a direita as letras sairam de posição */
+        width: 70%; /* com a largura as letras se ajustaram novamente */
+    }
+    
+} /* cuidado para não escrever o código fora do bloco da um trabalho para encontrar o erro */
+/* ---------------------------------------------------------------------------- */
+
+
+
+@media screen and (min-width: 992px) {
+/* ---------------------------------------------------------------------------- */
+    body {
+        background-image: linear-gradient(to top, #5f2c82, #49a09d);
+    }
+
+    section#login {
+        width: 950px;
+    }
+    
+    section#login > div#imagem {
+        float: right; /* imagem flutuar para direita (rolar, ir, ficar na direita ) */
+        width: 50%;
+        height: 100%;
+    }
+    
+    section#login > div#formulario {
+        float: left; /* formulario flutuar para esquerda (rolar, ir, ficar na esquerda ) */
+        width: 50%;
+    }
+
+    div#formulario > h1 {
+        font-size: 2em;
+    }
+
+    div#formulario > p {
+        font-size: 1.2em;
+    }
+    
+}
+/* ---------------------------------------------------------------------------- */
